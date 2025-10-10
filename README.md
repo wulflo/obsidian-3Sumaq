@@ -13,5 +13,5 @@ This theme has been tested for my personal use. It may not be compatible with ce
 
 
 # Support
-Enviame tu apoyo: https://tecito.app/alonsoup
+Enviame tu apoyo: https://tecito.app/alonsoup </br>
 Send me your support: https://tecito.app/alonsoup
