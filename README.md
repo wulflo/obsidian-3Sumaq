@@ -11,6 +11,10 @@ Just change the accent color and you'll have it applied to the entire theme with
 Este tema ha sido probado bajo mi uso personal. Podría no ser compatible con ciertos plugins. </br>
 This theme has been tested for my personal use. It may not be compatible with certain plugins.
 
+# 🌟 Credits
+Inspirado en los temas Minimal, Prism y el snippet Cards; aunque buscando la simplicidad. </br>
+Inspired by Minimal and Prism theme, and Snippet Cards, but looking for simplicity.
+
 # ☕ Support
 Enviame tu apoyo: https://tecito.app/alonsoup </br>
 Send me your support: https://tecito.app/alonsoup
