@@ -11,7 +11,6 @@ Just change the accent color and you'll have it applied to the entire theme with
 Este tema ha sido probado bajo mi uso personal. Podría no ser compatible con ciertos plugins. </br>
 This theme has been tested for my personal use. It may not be compatible with certain plugins.
 
-
 # ☕ Support
 Enviame tu apoyo: https://tecito.app/alonsoup </br>
 Send me your support: https://tecito.app/alonsoup
