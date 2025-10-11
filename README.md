@@ -13,8 +13,8 @@ Este tema ha sido probado bajo mi uso personal. Podría no ser compatible con ci
 This theme has been tested for my personal use. It may not be compatible with certain plugins.
 
 # 🌟 Credits
-Inspirado en los temas Minimal, Prism y el snippet Cards; aunque buscando la simplicidad. </br>
-Inspired by Minimal and Prism theme, and Snippet Cards, but looking for simplicity.
+Inspirado en los temas Minimal, Prism y el snippet Cards, con Licencia MIT; aunque buscando la simplicidad. </br>
+Inspired by Minimal and Prism theme, and Snippet Cards, MIT license; but looking for simplicity.
 
 # ☕ Support
 Enviame tu apoyo: https://tecito.app/alonsoup </br>
