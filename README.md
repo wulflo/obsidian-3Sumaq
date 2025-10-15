@@ -1,6 +1,9 @@
 # ⚽ Universitario: You pick the color
-+ A theme made for color lovers. Pick the color you want and the right brightness, and that's it. </br>
-+ Un tema hecho para los amantes del color. Elige el color que desees y el brillo adecuado y listo.
++ A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
++ Un tema hecho para los amantes del color. **Elige el color que desees y el brillo adecuado** y listo.
+
+> [!Tip] Try changing the color
+> Colorful headings and callouts that match the color you choose
 
 ## 🎨 Setup
 + Just change the accent color and it will be applied across the entire theme with gradient variations and more. </br>
