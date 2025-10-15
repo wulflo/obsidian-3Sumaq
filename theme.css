@@ -2345,24 +2345,6 @@ svg.svg-icon {
     color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 7%))
 }
 
-.is-mobile .modal {
-    background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%)) !important;
-}
-
-.is-phone .modal.mod-settings .vertical-tab-header {
-    background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%));
-    border-right: none;
-    flex-grow: 1;
-    height: 100%;
-    min-width: 100%;
-    padding: var(--size-4-4);
-    width: 100%;
-}
-
-.is-phone .workspace-drawer-active-tab-container .workspace-drawer-active-tab-content .nav-files-container {
-    font-size: 1.002rem;
-}
-
 .is-phone .modal.mod-sidebar-layout .modal-title {
     background: var(--background-primary);
 }
