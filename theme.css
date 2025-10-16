@@ -3020,3 +3020,20 @@ button:not(.clickable-icon) {
 .workspace-drawer-header {
     background: var(--background-secondary)
 }
+
+.community-item {
+    border: 1px solid var(--text-accent);
+}
+
+.community-item:hover {
+    border: 1px solid var(--text-accent);
+    background: var(--background-secondary)
+}
+
+.mod-community-modal .modal-sidebar .setting-item {
+    border: none !important;
+}
+
+input[type='range'] {
+    border: 1px solid var(--text-accent);
+}
