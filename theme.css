@@ -20,9 +20,9 @@
     line-height: var(--line-height-tight);
 }
 
-.is-mobile .nav-folder-title {
+.is-phone .nav-folder-title {
     font-size: 1em !important;
-    font-weight: 500 !important;
+    font-weight: bold !important;
     margin-bottom: 10px;
 }
 
@@ -38,8 +38,6 @@
     color: var(--text-accent) !important;
 
 }
-
-
 
 .tree-item-self {
     font-size: 1em;
@@ -118,8 +116,6 @@ input.prompt-input {
 .workspace-leaf-content {
     border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
 }
-
-
 
 .theme-dark,
 .theme-light {
@@ -255,8 +251,6 @@ h2,
 .markdown-rendered h6 {
     margin-bottom: 9px;
 }
-
-
 
 .theme-dark,
 .theme-light {
@@ -611,8 +605,6 @@ h2,
     height: fit-content !important;
 }
 
-
-
 .callout[data-callout="author"] {
     --callout-icon: library-big;
     --callout-color: 102, 10, 50;
@@ -625,8 +617,6 @@ h2,
 .theme-dark .callout[data-callout="author"] {
     --callout-color: 255, 240, 100;
 }
-
-
 
 .markdown-source-view.mod-cm6 .cm-embed-block {
     padding: 3px;
@@ -742,8 +732,6 @@ h2,
     margin-top: 0;
     margin-bottom: 0;
 }
-
-
 
 .label text {
     fill: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 17%)) !important;
@@ -872,8 +860,6 @@ th {
     text-shadow: none;
 }
 
-
-
 .markdown-source-view.is-live-preview img[src],
 .markdown-preview-view img[src] {
     margin-top: 10px;
@@ -913,8 +899,6 @@ body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-formatting-list,
 body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-fold-indicator .collapse-indicator {
     padding: 5px !important;
 }
-
-
 
 .cm-strong {
     font-weight: var(--bold-weight);
@@ -1003,8 +987,6 @@ a.tag {
     padding: 0px 0px 3px 0px;
 }
 
-
-
 .metadata-properties-heading {
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -1018,8 +1000,6 @@ a.tag {
 .metadata-property .multi-select-container {
     color: var(--text-accent);
 }
-
-
 
 ol {
     counter-reset: item
@@ -1037,8 +1017,6 @@ ol li:before {
 section>ol li::before {
     position: relative;
 }
-
-
 
 body {
     --anim-duration-none: 0;
@@ -1118,7 +1096,7 @@ body {
     --dialog-width: 560px;
     --dialog-max-width: 80vw;
     --dialog-max-height: 85vh;
-    --divider-color: var(--background-modifier-border);
+    --divider-color: transparent;
     --divider-color-hover: var(--interactive-accent);
     --divider-width: 1px;
     --divider-width-hover: 3px;
@@ -1645,7 +1623,7 @@ body {
     --dialog-width: 560px;
     --dialog-max-width: 80vw;
     --dialog-max-height: 85vh;
-    --divider-color: hsla(var(--color-accent-hsl), 0.5);
+    --divider-color: hsla(var(--color-accent-hsl), 0.1);
     --divider-color-hover: var(--interactive-accent);
     --divider-width: 1px;
     --divider-width-hover: 3px;
@@ -2335,6 +2313,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .is-phone .modal.mod-lg .modal-header, .is-phone .modal.mod-sidebar-layout .modal-header {
     border-bottom: none;
     background: var(--background-primary) !important; 
+    margin-top: -3em !important;
 }
 
 .is-phone .modal.mod-sidebar-layout .modal-title{
@@ -2349,9 +2328,9 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     border-bottom: var(--border-width) solid var(--background-secondary);
 }
 
-.theme-light .setting-item {
-    border-top: none;
-    border-bottom: 1px solid var(--text-accent);
+.setting-item {
+    border-top: none !important;
+    border-bottom: 1px solid var(--text-accent) !important;
 }
 
 svg.svg-icon {
@@ -3033,4 +3012,12 @@ button:not(.clickable-icon) {
 
 #editingToolbarModalBar.editingToolbarDefaultAesthetic {
     border: none
+}
+
+.setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control button:not(.clickable-icon), .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input, .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control select, .workspace-drawer-active-tab-header select, .workspace-drawer-active-tab-header {
+    background: var(--background-secondary) !important;
+}
+
+.workspace-drawer-header {
+    background: var(--background-secondary)
 }
