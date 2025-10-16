@@ -26,6 +26,14 @@
     margin-bottom: 10px;
 }
 
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    background-color: var(--background-primary);
+}
+
+.theme-light .workspace-drawer-vault-name {
+    color: #222222;
+}
+
 .theme-light .nav-file-title,
 .theme-light .nav-folder-title {
     color: #474747;
@@ -41,6 +49,10 @@
 
 .tree-item-self {
     font-size: 1em;
+}
+
+.theme-light .tree-item-self {
+    color: #000 !important;
 }
 
 .view-header-title-parent {
@@ -91,7 +103,7 @@ input.prompt-input {
 
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-    background: none;
+    background: var(--background-secondary) !important;
     border: 1px solid var(--text-accent);
     border-radius: 5px;
     margin-bottom: 1px;
@@ -114,7 +126,7 @@ input.prompt-input {
 }
 
 .workspace-leaf-content {
-    border-bottom: var(--tab-outline-width) solid var(--tab-outline-color);
+    border-bottom: none;
 }
 
 .theme-dark,
@@ -644,9 +656,9 @@ h2,
     margin: 0;
 }
 
-.markdown-preview-view th, .table-view-table > thead > tr > th,
-.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th
-.theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+.markdown-preview-view th,
+.table-view-table>thead>tr>th,
+.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th .theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
     font-size: 1.1em;
     background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 30%)) !important;
     padding-bottom: 10px;
@@ -681,7 +693,10 @@ h2,
     border: 0px solid transparent;
 }
 
-.markdown-preview-view .dataview.table-view-table>thead>tr>th, .markdown-preview-view th, .table-view-table > thead > tr > th, .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+.markdown-preview-view .dataview.table-view-table>thead>tr>th,
+.markdown-preview-view th,
+.table-view-table>thead>tr>th,
+.markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
     font-size: 1.1em;
     text-align: center !important;
     border-width: 0px;
@@ -689,11 +704,15 @@ h2,
     padding: 8px !important;
 }
 
-.theme-dark .markdown-preview-view .dataview.table-view-table>thead>tr>th, .theme-dark .markdown-preview-view th, .theme-dark .table-view-table > thead > tr > th, .theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
+.theme-dark .markdown-preview-view .dataview.table-view-table>thead>tr>th,
+.theme-dark .markdown-preview-view th,
+.theme-dark .table-view-table>thead>tr>th,
+.theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table thead.table-view-thead tr th {
     background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 20%)) !important;
 }
 
-.theme-dark .markdown-rendered td, .theme-dark .markdown-preview-view .dataview.table-view-table .table-view-tbody td {
+.theme-dark .markdown-rendered td,
+.theme-dark .markdown-preview-view .dataview.table-view-table .table-view-tbody td {
     text-align: center !important;
     background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%)) !important;
 }
@@ -1510,9 +1529,9 @@ body {
     --accent-h: 254;
     --accent-s: 80%;
     --accent-l: 68%;
-    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 49%));
+    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 60%));
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsla(var(--interactive-accent-hsl), 0.1);
+    --background-secondary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 45%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -2035,10 +2054,10 @@ body {
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
     --accent-h: 254;
     --accent-l: 68%;
-    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 60%));
+    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 30%));
     ;
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 35%));
+    --background-secondary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%));
     --background-tertiary: hsl(var(--interactive-accent-hsl), 10%, 100%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
@@ -2072,22 +2091,16 @@ body {
     --interactive-accent-hover: var(--color-accent-2);
 }
 
-
-
 .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-    border: 2px solid var(--text-accent);
+    border: none !important;
     border-radius: 9px;
     margin-bottom: 2px;
     margin-right: 1px;
 }
 
-.theme-light .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
-    border: 2px solid var(--background-modifier-border-focus);
-}
-
-.is-focused .workspace-tab-header.is-active {
-    border: 1px solid var(--text-accent) !important;
-    background: hsla(var(--color-accent-hsl), 0.2) !important;
+.workspace-tab-header.is-active {
+    border: none !important;
+    background: var(--background-secondary) !important;
 }
 
 .workspace-tab-header .workspace-tab-header-inner-title {
@@ -2127,12 +2140,12 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 }
 
 .tree-item-self.is-active {
-    background-color: hsla(var(--color-accent-hsl), 0.4) !important;
+    background-color: var(--background-secondary) !important;
+    border: none !important;
 }
 
 .theme-light .tree-item-self.is-active {
     background-color: hsla(var(--color-accent-hsl), 0.2) !important;
-    border: 1px solid var(--text-accent);
 }
 
 .tree-item-self.mod-collapsible {
@@ -2153,7 +2166,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 }
 
 .theme-light .workspace-ribbon {
-    background: hsla(var(--color-accent-hsl), 0.2) !important;
+    background: var(--background-secondary) !important;
 }
 
 .clickable-icon {
@@ -2306,21 +2319,27 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     background-color: var(--background-primary) !important;
 }
 
+.modal {
+    border: none !important;
+    box-shadow: none !important;
+}
+
 .is-phone .setting-item-name {
     font-size: 1.15em !important;
 }
 
-.is-phone .modal.mod-lg .modal-header, .is-phone .modal.mod-sidebar-layout .modal-header {
+.is-phone .modal.mod-lg .modal-header,
+.is-phone .modal.mod-sidebar-layout .modal-header {
     border-bottom: none;
-    background: var(--background-primary) !important; 
+    background: var(--background-primary) !important;
 }
 
-.is-phone .modal.mod-sidebar-layout .modal-title{
+.is-phone .modal.mod-sidebar-layout .modal-title {
     font-size: 1.35em;
     text-transform: uppercase;
     background-color: var(--background-secondary) !important;
     padding: 4px;
-    border-radius:10px;
+    border-radius: 10px;
 }
 
 .is-phone .modal.mod-settings .vertical-tab-nav-item {
@@ -2421,20 +2440,18 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
 }
 
 .theme-dark .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
-    background-image: radial-gradient(circle, hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 42%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 45%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 49%)));
+    background-image: radial-gradient(circle, hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 50%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 60%)));
     padding-right: 8%;
     padding-left: 8%;
 }
 
 .theme-light .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
-    background-image: linear-gradient(to top, hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 55%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 57%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 60%)));
+    background: var(--background-primary);
 }
 
 .markdown-embed {
     border: none;
 }
-
-
 
 .theme-light {
     --cbs: 0px 2px 4px rgba(0, 0, 0, 0.01), 0px 4px 8px rgba(0, 0, 0, 0.01),
@@ -2963,8 +2980,13 @@ body {
     padding-left: 0;
 }
 
-.theme-light .status-bar, body.theme-light:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-    background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 50%));
+.workspace-split.mod-vertical>*>.workspace-leaf-resize-handle,
+.workspace-split.mod-left-split>.workspace-leaf-resize-handle {
+    border: 2px solid var(--background-primary);
+}
+
+.theme-light .status-bar {
+    background: var(--background-secondary);
 }
 
 button:not(.clickable-icon) {
@@ -2994,14 +3016,18 @@ button:not(.clickable-icon) {
     border: 1px solid var(--text-accent);
 }
 
-.chat-input-textarea, .chat-input-textarea:focus, .user-message {
+.chat-input-textarea,
+.chat-input-textarea:focus,
+.user-message {
     outline: none;
     background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 35%));
     border: none;
     box-shadow: none;
 }
 
-.theme-light .chat-input-textarea, .theme-light .chat-input-textarea:focus, .theme-light .user-message {
+.theme-light .chat-input-textarea,
+.theme-light .chat-input-textarea:focus,
+.theme-light .user-message {
     background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 45%));
 }
 
@@ -3013,7 +3039,11 @@ button:not(.clickable-icon) {
     border: none
 }
 
-.setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control button:not(.clickable-icon), .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input, .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control select, .workspace-drawer-active-tab-header select, .workspace-drawer-active-tab-header {
+.setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control button:not(.clickable-icon),
+.setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input,
+.setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control select,
+.workspace-drawer-active-tab-header select,
+.workspace-drawer-active-tab-header {
     background: var(--background-secondary) !important;
 }
 
@@ -3036,4 +3066,21 @@ button:not(.clickable-icon) {
 
 input[type='range'] {
     border: 1px solid var(--text-accent);
+}
+
+.tw-text-sm {
+    border: none;
+}
+
+.tw-border-b-border {
+    border: none;
+}
+
+.tw-text-xs {
+    border: none !important;
+}
+
+.tw-\@container\/chat-input, .tw-pt-0 {
+    border: 3px solid var(--background-secondary);
+    border-radius: 10px;
 }
