@@ -2118,10 +2118,14 @@ body {
 
 .vertical-tab-header-group-title {
     font-size: 1.05em;
-    color: var(--text-accent);
+    color: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 30%));
     font-weight: var(--font-semibold);
     border-bottom: 1px solid var(--text-accent);
     margin-bottom: 4px;
+}
+
+.theme-dark .vertical-tab-header-group-title {
+    color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 5%));
 }
 
 .workspace-tabs .workspace-leaf {
@@ -3081,4 +3085,8 @@ input[type='range'] {
 .tw-pt-0 {
     border: 3px solid var(--background-secondary);
     border-radius: 10px;
+}
+
+.community-modal-search-results-wrapper {
+    border-top: 1px solid var(--text-accent);
 }
