@@ -1791,7 +1791,7 @@ body {
     --font-smaller: 0.875em;
     --font-small: 0.933em;
     --font-ui-smaller: 12px;
-    --font-ui-small: 13px;
+    --font-ui-small: 13.5px;
     --font-ui-medium: 15px;
     --font-ui-large: 20px;
     --font-thin: 100;
@@ -2211,6 +2211,10 @@ body {
     --interactive-accent-hover: var(--color-accent-2);
 }
 
+.graph-control-section {
+    background-color: var(--background-tertiary);
+}
+
 .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header {
     border: none !important;
     border-radius: 5px;
@@ -2441,6 +2445,15 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 .modal {
     border: none !important;
     box-shadow: none !important;
+}
+
+.modal-sidebar {
+    background-color: var(--background-primary);
+}
+
+.theme-light .modal-sidebar {
+    --background-modifier-form-field: var(--background-primary);
+    background-color: var(--background-secondary);
 }
 
 .is-phone .setting-item-name {
@@ -3028,6 +3041,19 @@ body {
     padding-left: 0;
 }
 
+.empty-state-action {
+    background-color: var(--background-tertiary);
+    color: var(--text-muted);
+    border-radius: 5px;
+    padding: 6px;
+    margin-bottom: 5px
+}
+
+.is-mobile .empty-state-action {
+    background-color: var(--background-tertiary);
+    color: var(--text-muted)
+}
+
 .theme-light .status-bar {
     background: var(--background-secondary);
 }
@@ -3104,13 +3130,25 @@ button:not(.clickable-icon) {
     background: var(--background-secondary)
 }
 
+.is-mobile .workspace-drawer-header {
+    border-radius: 10px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
 .community-item {
     border: none;
+    background: var(--background-primary);
+}
+
+.community-item.is-selected, .community-item.is-selected .community-item-downloads, .community-item.is-selected .community-item-author {
+    color: var(--text-normal) !important;
+    font-weight: bold;
 }
 
 .community-item:hover {
     border: none;
-    background: var(--background-tertiary)
+    background: var(--background-tertiary) !important;
 }
 
 .community-item .flair {
@@ -3120,6 +3158,11 @@ button:not(.clickable-icon) {
 
 .mod-community-modal .modal-sidebar .setting-item {
     border: none !important;
+}
+
+
+.community-modal-search-results-wrapper {
+    border-top: 1px solid var(--text-accent);
 }
 
 input[type='range'] {
@@ -3142,8 +3185,4 @@ input[type='range'] {
 .tw-pt-0 {
     border: 3px solid var(--background-secondary);
     border-radius: 10px;
-}
-
-.community-modal-search-results-wrapper {
-    border-top: 1px solid var(--text-accent);
 }
