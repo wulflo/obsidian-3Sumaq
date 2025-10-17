@@ -1529,9 +1529,9 @@ body {
     --accent-h: 254;
     --accent-s: 80%;
     --accent-l: 68%;
-    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 60%));
+    --background-primary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 60%));
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 45%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 45%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -2054,10 +2054,10 @@ body {
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
     --accent-h: 254;
     --accent-l: 68%;
-    --background-primary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 30%));
+    --background-primary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 30%));
     ;
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 25%));
+    --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
     --background-tertiary: hsl(var(--interactive-accent-hsl), 10%, 100%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
@@ -2439,14 +2439,10 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
     border: none !important;
 }
 
-.theme-dark .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
-    background-image: radial-gradient(circle, hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 50%)), hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 60%)));
+.view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
+    background-image: var(--background-primary);
     padding-right: 8%;
     padding-left: 8%;
-}
-
-.theme-light .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
-    background: var(--background-primary);
 }
 
 .markdown-embed {
@@ -2976,7 +2972,8 @@ body {
 }
 
 .status-bar {
-    background: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 45%));
+    background: var(--background-secondary);
+    border: none !important;
     padding-left: 0;
 }
 
@@ -3080,7 +3077,8 @@ input[type='range'] {
     border: none !important;
 }
 
-.tw-\@container\/chat-input, .tw-pt-0 {
+.tw-\@container\/chat-input,
+.tw-pt-0 {
     border: 3px solid var(--background-secondary);
     border-radius: 10px;
 }
