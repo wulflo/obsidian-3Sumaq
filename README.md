@@ -1,4 +1,4 @@
-# ⚽ Universitario: You pick the color
+# ⚽ Universitario: **You pick the color**
 + A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 + Un tema hecho para los amantes del color. **Elige el color que desees y el brillo adecuado** y listo.
 
