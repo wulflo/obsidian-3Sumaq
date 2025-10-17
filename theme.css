@@ -57,10 +57,10 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 .view-header {
     background: var(--background-secondary) !important;
     border-radius: 5px;
-    width: 99.5%;
+    width: 99%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 2px;
+    margin-top: 4px;
 }
 
 .view-header-title-parent {
@@ -112,6 +112,12 @@ input.prompt-input {
 .workspace-tab-header-inner,
 .side-dock-settings,
 .side-dock-actions {
+    display: flex;
+    justify-content: center;
+    color: var(--text-accent);
+}
+
+.workspace-tab-header-inner {
     display: flex;
     justify-content: center;
     color: var(--text-accent);
@@ -733,9 +739,16 @@ h2,
     background: hsl(var(--accent-h), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 50%)) !important;
 }
 
+th {
+    background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 20%)) !important;
+}
+
+.theme-light th {
+    background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 5%)) !important;
+}
+
 .theme-dark .markdown-rendered td,
 .theme-dark .markdown-preview-view .dataview.table-view-table .table-view-tbody td {
-    text-align: center !important;
     background: var(--background-secondary) !important;
 }
 
@@ -949,7 +962,11 @@ body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-fold-indicator .coll
 .cm-strong {
     font-weight: var(--bold-weight);
     font-size: 1.08em;
-    color: var(--text-accent);
+    color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
+}
+
+.theme-dark .cm-strong {
+    color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%));
 }
 
 .cm-em {
@@ -1559,6 +1576,7 @@ body {
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 55%));
     --background-primary-alt: var(--color-base-10);
     --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 45%));
+    --background-tertiary: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 50%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -1572,7 +1590,7 @@ body {
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-form-field: var(--color-base-00);
     --text-normal: var(--color-base-100);
-    --text-muted: var(--color-base-70);
+    --text-muted: white;
     --text-faint: var(--color-base-50);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
@@ -2084,8 +2102,8 @@ body {
     --background-primary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 30%));
     ;
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
-    --background-tertiary: hsl(var(--interactive-accent-hsl), 10%, 100%);
+    --background-secondary: hsl(var(--accent-h), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 18%));
+    --background-tertiary: hsl(calc(var(--accent-h) - 330), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 22%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -2127,11 +2145,15 @@ body {
 
 .workspace-tab-header.is-active {
     border: none !important;
-    background: var(--background-secondary) !important;
+    background: var(--background-tertiary) !important;
+}
+
+.workspace .mod-root .workspace-tab-header-inner-title {
+    color: var(--tab-text-color-focused-active);
 }
 
 .workspace-tab-header .workspace-tab-header-inner-title {
-    font-size: 1em;
+    font-size: 0.95em;
     text-align: center;
 }
 
@@ -2141,7 +2163,7 @@ body {
 }
 
 .menu {
-    background-color: var(--background-primary);
+    background-color: var(--background-tertiary);
 }
 
 .vertical-tab-header-group-title {
@@ -2194,20 +2216,14 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 }
 
 .workspace-ribbon {
+    background: var(--background-tertiary) !important;
     border-top-right-radius: 10px;
-}
-
-.theme-light .workspace-ribbon {
-    background: var(--background-secondary) !important;
 }
 
 .clickable-icon {
     color: var(--icon-color) !important;
     opacity: var(--icon-opacity) !important;
 }
-
-
-
 
 .theme-dark .workspace-drawer {
     background-color: var(--background-primary);
@@ -2347,10 +2363,6 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     word-break: break-word;
 }
 
-.modal-sidebar {
-    background-color: var(--background-primary) !important;
-}
-
 .modal {
     border: none !important;
     box-shadow: none !important;
@@ -2378,13 +2390,19 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     border-bottom: var(--border-width) solid var(--background-secondary);
 }
 
+body:not(.is-phone) .horizontal-tab-nav-item.is-active,
+body:not(.is-phone) .vertical-tab-nav-item.is-active {
+    color: var(--text-muted);
+    background-color: var(--background-primary);
+}
+
 .setting-item {
     border-top: none !important;
     border-bottom: 1px solid var(--text-accent) !important;
 }
 
 svg.svg-icon {
-    color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 17%))
+    color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%))
 }
 
 .theme-dark .svg-icon {
@@ -2443,11 +2461,11 @@ svg.svg-icon {
 }
 
 .modal.mod-settings .vertical-tab-header {
-    background: var(--background-primary);
+    background: var(--background-tertiary);
 }
 
-.theme-light .search-result-file-match:last-child {
-    background: var(--background-primary);
+.search-result-file-match:last-child {
+    background: var(--background-secondary);
 }
 
 hr {
@@ -2522,8 +2540,6 @@ cite {
     display: block;
     padding-right: 1em;
 }
-
-
 
 .container#calendar-container .calendar {
     &>thead>tr:first-of-type {
@@ -3011,7 +3027,8 @@ body {
     background: var(--background-secondary);
 }
 
-.workspace-split.mod-left-split > .workspace-leaf-resize-handle, .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
+.workspace-split.mod-left-split>.workspace-leaf-resize-handle,
+.workspace-split.mod-right-split>.workspace-leaf-resize-handle {
     background: var(--background-secondary) !important;
     width: 2px;
 }
@@ -3071,7 +3088,7 @@ button:not(.clickable-icon) {
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control select,
 .workspace-drawer-active-tab-header select,
 .workspace-drawer-active-tab-header {
-    background: var(--background-secondary) !important;
+    background: var(--background-tertiary) !important;
 }
 
 .workspace-drawer-header {
