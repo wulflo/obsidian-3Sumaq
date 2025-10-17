@@ -3140,6 +3140,11 @@ button:not(.clickable-icon) {
     background: var(--background-tertiary);
 }
 
+.is-mobile .workspace-drawer-active-tab-container {
+    background-color: transparent;
+}
+
+
 .workspace-drawer-header {
     background: var(--background-secondary)
 }
@@ -3155,10 +3160,22 @@ button:not(.clickable-icon) {
     background: var(--background-primary);
 }
 
+.theme-dark .community-item {
+    border: none;
+    background: var(--background-secondary);
+}
+
 .community-item.is-selected,
 .community-item.is-selected .community-item-downloads,
 .community-item.is-selected .community-item-author {
     color: var(--text-normal) !important;
+    font-weight: bold;
+}
+
+.theme-dark .community-item.is-selected,
+.theme-dark .community-item.is-selected .community-item-downloads,
+.theme-dark .community-item.is-selected .community-item-author {
+    color: var(--text-muted) !important;
     font-weight: bold;
 }
 
@@ -3170,6 +3187,11 @@ button:not(.clickable-icon) {
 .community-item .flair {
     color: var(--text-muted);
     background: var(--background-secondary);
+}
+
+.theme-dark .community-item .flair {
+    color: var(--text-muted);
+    background: var(--background-primary);
 }
 
 .mod-community-modal .modal-sidebar .setting-item {
