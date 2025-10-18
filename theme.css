@@ -2211,7 +2211,15 @@ body {
 }
 
 .theme-light.is-mobile {
-    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 25%));
+    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 35%));
+    --background-secondary: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
+}
+
+.theme-dark.is-mobile {
+    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 60%));
+    --background-primary-alt: var(--color-base-10);
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 55%));
+    --background-tertiary: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 45%));
 }
 
 .workspace-drawer .nav-header {
