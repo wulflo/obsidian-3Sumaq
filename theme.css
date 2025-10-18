@@ -2218,8 +2218,8 @@ body {
 .theme-dark.is-mobile {
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 60%));
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 55%));
-    --background-tertiary: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 35%));
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 35%));
+    --background-tertiary: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 25%));
     --scrollbar-thumb-bg: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 55%));
 }
 
@@ -2521,7 +2521,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 }
 
 .is-phone .modal.mod-settings .vertical-tab-nav-item {
-    border-bottom: var(--border-width) solid var(--background-secondary);
+    border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
 }
 
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
@@ -2536,6 +2536,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 .theme-light .setting-item {
+    border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
+}
+
+.theme-dark.is-mobile .setting-item {
     border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
 }
 
