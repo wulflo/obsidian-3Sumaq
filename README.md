@@ -1,4 +1,4 @@
-# ⚽ 3Ch’aska: **You pick the color**
+# ⚽ 3Sumaq: **You pick the color**
 + A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
 > [!multi-column]
