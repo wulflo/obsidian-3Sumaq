@@ -2216,10 +2216,11 @@ body {
 }
 
 .theme-dark.is-mobile {
-    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 60%));
+    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 60%));
     --background-primary-alt: var(--color-base-10);
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 55%));
-    --background-tertiary: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 45%));
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 55%));
+    --background-tertiary: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 35%));
+    --scrollbar-thumb-bg: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 55%));
 }
 
 .workspace-drawer .nav-header {
@@ -2513,6 +2514,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     background-color: var(--background-secondary) !important;
     padding: 4px;
     border-radius: 10px;
+}
+
+.theme-dark.is-mobile .modal.mod-sidebar-layout .modal-title {
+    background-color: var(--background-tertiary) !important;
 }
 
 .is-phone .modal.mod-settings .vertical-tab-nav-item {
@@ -3205,6 +3210,22 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 .community-item {
     border: none;
     background: var(--background-primary);
+}
+
+.is-phone .mod-community-theme .community-item {
+    background-color: var(--background-primary);
+}
+
+.is-phone .community-modal-controls {
+    background-color: var(--background-primary);
+}
+
+body.emulate-mobile button {
+    color: var(--background-primary);
+}
+
+.theme-dark.is-mobile button {
+    color: white;
 }
 
 .theme-dark .community-item {
