@@ -10,7 +10,9 @@
 >> You can pick a different color every time you want
 
 ## 🎨 Setup
-+ Just change the accent color and it will be applied across the entire theme with gradient variations and more. </br>
+1. Go to apearance
+	1. Pick accent color circle
+	2. Choose your favourite color
 
 ![cover](https://github.com/user-attachments/assets/5bf8413b-46a0-4ef4-b922-0f8dce9a186e)
 
