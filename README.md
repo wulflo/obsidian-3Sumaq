@@ -10,7 +10,7 @@
 >> You can pick a different color every time you want
 
 ## 🎨 Setup
-1. Go to apearance
+1. Go to appearance
 	1. Pick accent color circle
 	2. Choose your favourite color
 
