@@ -2493,6 +2493,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     background-color: var(--background-primary);
 }
 
+.theme-dark .modal-sidebar {
+    background-color: var(--background-primary-alt);
+}
+
 .theme-light .modal-sidebar {
     --background-modifier-form-field: var(--background-primary);
     background-color: var(--background-secondary);
