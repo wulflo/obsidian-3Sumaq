@@ -14,7 +14,7 @@
 	1. Pick accent color circle
 	2. Choose your favourite color
 
-<img width="1536" height="1024" alt="portada" src="https://github.com/user-attachments/assets/f84b1d30-834e-462f-905c-372936d9faf3" />
+<img width="1024" height="1024" alt="logo" src="https://github.com/user-attachments/assets/b035a468-35d3-4067-82fe-b46d02413ad1" />
 
 # 🪧 Disclaimer
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
