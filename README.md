@@ -1,7 +1,7 @@
 #  🌎 Universitario: **You pick the color**
 + A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
-> [!multi-column]
+> [!multi-column] You can use "multi column callouts"
 >
 >> [!note]+ Try changing the color
 >> Colorful headings and callouts that match the color you choose
