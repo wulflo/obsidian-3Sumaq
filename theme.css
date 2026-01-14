@@ -1,4 +1,31 @@
 /* ---------------------------------------------------------------------------
+
+'##::::'##:'##::: ##:'####:'##::::'##:'########:'########:::'######::'####:'########::::'###::::'########::'####::'#######::
+ ##:::: ##: ###:: ##:. ##:: ##:::: ##: ##.....:: ##.... ##:'##... ##:. ##::... ##..::::'## ##::: ##.... ##:. ##::'##.... ##:
+ ##:::: ##: ####: ##:: ##:: ##:::: ##: ##::::::: ##:::: ##: ##:::..::: ##::::: ##:::::'##:. ##:: ##:::: ##:: ##:: ##:::: ##:
+ ##:::: ##: ## ## ##:: ##:: ##:::: ##: ######::: ########::. ######::: ##::::: ##::::'##:::. ##: ########::: ##:: ##:::: ##:
+ ##:::: ##: ##. ####:: ##::. ##:: ##:: ##...:::: ##.. ##::::..... ##:: ##::::: ##:::: #########: ##.. ##:::: ##:: ##:::: ##:
+ ##:::: ##: ##:. ###:: ##:::. ## ##::: ##::::::: ##::. ##::'##::: ##:: ##::::: ##:::: ##.... ##: ##::. ##::: ##:: ##:::: ##:
+. #######:: ##::. ##:'####:::. ###:::: ########: ##:::. ##:. ######::'####:::: ##:::: ##:::: ##: ##:::. ##:'####:. #######::
+:.......:::..::::..::....:::::...:::::........::..:::::..:::......:::....:::::..:::::..:::::..::..:::::..::....:::.......:::
+
+'########::'##:::'##:
+ ##.... ##:. ##:'##::
+ ##:::: ##::. ####:::
+ ########::::. ##::::
+ ##.... ##:::: ##::::
+ ##:::: ##:::: ##::::
+ ########::::: ##::::
+........::::::..:::::
+:::'###::::'##::::::::'#######::'##::: ##::'######:::'#######::
+::'## ##::: ##:::::::'##.... ##: ###:: ##:'##... ##:'##.... ##:
+:'##:. ##:: ##::::::: ##:::: ##: ####: ##: ##:::..:: ##:::: ##:
+'##:::. ##: ##::::::: ##:::: ##: ## ## ##:. ######:: ##:::: ##:
+ #########: ##::::::: ##:::: ##: ##. ####::..... ##: ##:::: ##:
+ ##.... ##: ##::::::: ##:::: ##: ##:. ###:'##::: ##: ##:::: ##:
+ ##:::: ##: ########:. #######:: ##::. ##:. ######::. #######::
+..:::::..::........:::.......:::..::::..:::......::::.......:::
+
                     GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -1061,8 +1088,6 @@ g>g>path {
     stroke: red !important;
 }
 
-
-
 table {
     font-size: 1em;
     margin-top: 5px;
@@ -1453,7 +1478,7 @@ body {
     --inline-title-weight: var(--h1-weight);
     --inline-title-margin-bottom: 0.5em;
     --input-height: 30px;
-    --input-radius: 5px;
+    --input-radius: 5px !important;
     --input-font-weight: var(--font-normal);
     --input-border-width: 1px;
     --italic-color: inherit;
@@ -1981,7 +2006,7 @@ body {
     --inline-title-weight: var(--h1-weight);
     --inline-title-margin-bottom: 0.5em;
     --input-height: 30px;
-    --input-radius: 5px;
+    --input-radius: 5px !important;
     --input-font-weight: var(--font-normal);
     --input-border-width: 1px;
     --italic-color: inherit;
@@ -2311,6 +2336,25 @@ body {
     --background-tertiary: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 25%));
     --scrollbar-thumb-bg: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 55%));
 }
+.is-mobile.theme-dark {
+    --color-base-00: #000;
+    --color-base-10: #111;
+    --color-base-20: #1e1e1e;
+    --tag-background: hsla(var(--interactive-accent-hsl), 0.2);
+    --search-result-background: var(--background-secondary);
+    --background-modifier-form-field: var(--background-modifier-border);
+    --background-modifier-cover: rgba(0, 0, 0, 0.35);
+    --background-modifier-hover: rgba(var(--mono-rgb-100), 0.15);
+    --background-modifier-message: var(--background-secondary);
+    --settings-home-background: var(--background-primary);
+    --settings-background: var(--background-primary);
+    --setting-items-background: var(--background-secondary);
+    --menu-divider-color: var(--background-modifier-border-hover);
+    --mobile-sidebar-background: none;
+    --modal-background: var(--background-secondary);
+    --interactive-normal: var(--background-modifier-border);
+    --interactive-hover: var(--background-modifier-border-hover);
+}
 
 .workspace-drawer .nav-header {
     border-bottom: var(--border-width) solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
@@ -2352,6 +2396,19 @@ body {
 
 .workspace-tab-header .workspace-tab-header-inner-title {
     font-size: 0.95em;
+    text-align: center;
+}
+
+
+body .workspace-tab-header .workspace-tab-header-inner-title {
+    font-size: 1em !important;
+    color: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 40%));
+    text-align: center;
+}
+
+.theme-light.is-mobile .workspace-tab-header .workspace-tab-header-inner-title {
+    font-size: 1em !important;
+    color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 30%));
     text-align: center;
 }
 
@@ -2428,7 +2485,11 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
 }
 
 .theme-dark .workspace-drawer-inner {
-    background-color: var(--background-primary);
+    background-color: var(--background-secondary);
+}
+
+.theme-dark.is-mobile .workspace-drawer-inner {
+    background-color: black;
 }
 
 .theme-dark.is-mobile .prompt {
@@ -2587,20 +2648,23 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     background-color: var(--background-secondary);
 }
 
-.is-phone .setting-item-name {
+.is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-header {
+    background-color: var(--background-primary) !important;
+}
+
+.is-mobile .setting-item-name {
     font-size: 1.15em !important;
 }
 
 .is-phone .modal.mod-lg .modal-header,
 .is-phone .modal.mod-sidebar-layout .modal-header {
     border-bottom: none;
-    background: var(--background-primary) !important;
+    background: transparent !important;
 }
 
 .is-phone .modal.mod-sidebar-layout .modal-title {
-    font-size: 1.35em;
-    text-transform: uppercase;
-    background-color: var(--background-secondary) !important;
+    font-size: 1.5em;
+    background-color: var(--background-primary) !important;
     padding: 4px;
     border-radius: 10px;
 }
@@ -2613,6 +2677,27 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
 }
 
+.theme-dark.is-phone .modal.mod-settings .vertical-tab-nav-item {
+    border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 65%));
+}
+
+.is-phone .workspace-drawer-tab-options-list, .is-phone .workspace-drawer-tab-select {
+    box-shadow: none;
+    border-radius: 5px !important;
+    background-color: black !important;
+    border: 1px solid var(--background-secondary);
+}
+
+.theme-light.is-phone .workspace-drawer-tab-options-list, .theme-light.is-phone .workspace-drawer-tab-select {
+    box-shadow: none;
+    border-radius: 5px !important;
+    background-color: var(--background-secondary) !important;
+}
+
+.workspace-drawer-tab-select .workspace-tab-header-inner, .workspace-drawer-tab-options .workspace-tab-header-inner, .workspace-drawer-tab-options:not(.has-swipe) .workspace-tab-header.is-active .workspace-tab-header-inner {
+    border-radius: 5px;
+}
+
 body:not(.is-phone) .horizontal-tab-nav-item.is-active,
 body:not(.is-phone) .vertical-tab-nav-item.is-active {
     color: var(--text-muted);
@@ -2623,6 +2708,24 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 .theme-dark:not(.is-phone) .vertical-tab-nav-item.is-active {
     color: var(--text-muted);
     background-color: var(--background-secondary);
+}
+
+.is-mobile svg.svg-icon {
+    background: transparent;
+    border-radius: 4px;
+}
+
+.is-phone .view-header .view-header-left .view-action {
+    border-radius: 5px;
+    background: none;
+}
+
+.is-mobile .setting-group .setting-items {
+    border-radius: 8px;
+}
+
+.theme-dark.is-mobile.is-mobile .setting-group .setting-items {
+    background: var(--background-primary);
 }
 
 .setting-item {
@@ -3296,6 +3399,10 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 
 .workspace-drawer-header {
     background: var(--background-secondary)
+}
+
+.is-mobile .workspace-drawer-header {
+    background: transparent;
 }
 
 .is-mobile .workspace-drawer-header {
