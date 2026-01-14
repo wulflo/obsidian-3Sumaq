@@ -2450,21 +2450,6 @@ body .workspace-tab-header .workspace-tab-header-inner-title {
     border: 1px solid var(--text-accent)
 }
 
-body:not(.is-grabbing) .tree-item-self.is-active:hover,
-.tree-item-self.is-active {
-    background-color: var(--background-secondary);
-    width: fit-content;
-}
-
-.tree-item-self.is-active {
-    background-color: var(--background-secondary) !important;
-    border: none !important;
-}
-
-.theme-light .tree-item-self.is-active {
-    background-color: hsla(var(--color-accent-hsl), 0.2) !important;
-}
-
 .tree-item-self.mod-collapsible {
     border: none;
 }
