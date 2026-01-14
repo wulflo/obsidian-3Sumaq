@@ -8,24 +8,6 @@
 
 ---------------------------------------------------------------------------*/
 
-.nav-file-title,
-.nav-folder-title {
-    margin-bottom: var(--size-2-1);
-    display: flex;
-    border-radius: var(--radius-s);
-    cursor: var(--cursor);
-    color: #bababa;
-    font-size: 1em !important;
-    font-weight: var(--nav-item-weight);
-    line-height: var(--line-height-tight);
-}
-
-.is-phone .nav-folder-title {
-    font-size: 1em !important;
-    font-weight: bold !important;
-    margin-bottom: 10px;
-}
-
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
     background-color: var(--background-primary);
 }
@@ -39,19 +21,126 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     color: #474747;
 }
 
+.nav-file-title,
+.nav-folder-title {
+    margin-bottom: var(--size-2-1);
+    display: flex;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 40%)) !important;
+    font-size: 1em !important;
+    font-weight: var(--nav-item-weight);
+    line-height: var(--line-height-tight);
+}
+
+.theme-light .nav-file-title,
+.theme-light .nav-folder-title {
+    color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 35%)) !important;
+}
+
+
+.collapse-icon svg.svg-icon {
+    color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 40%));
+}
+
+.theme-light .collapse-icon svg.svg-icon {
+    color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 35%));
+}
+
+:root {
+    color: inherit;
+}
+
+.theme-light {
+    --C001: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 16%));
+    --C002: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 19%));
+    --C003: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 22%));
+    --C004: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 25%));
+    --C005: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 25%));
+    --C006: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 25%));
+    --C007: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 22%));
+    --C008: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 19%));
+    --C009: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 16%));
+    --C010: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 19%));
+    --C011: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 22%));
+}
+
+.theme-dark {
+    --C001: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C002: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C003: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C004: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C005: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C006: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C007: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C008: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C009: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C010: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+    --C011: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) - 40%));
+}
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+2),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+2),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+2) { --colorful: var(--C001); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+3),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+3),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+3) { --colorful: var(--C002); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+4),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+4),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+4) { --colorful: var(--C003); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+5),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+5),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+5) { --colorful: var(--C004); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+6),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+6),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+6) { --colorful: var(--C005); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+7),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+7),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+7) { --colorful: var(--C006); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+8),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+8),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+8) { --colorful: var(--C007); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+9),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+9),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+9) { --colorful: var(--C008); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+10),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+10),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+10) { --colorful: var(--C009); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+11),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+11),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+11) { --colorful: var(--C010); }
+
+body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+12),
+body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+12),
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) { --colorful: var(--C011); }
+
+.nav-files-container > div > .nav-folder,
+[data-type="bookmarks"] .tree-item {
+  background-color: var(--colorful);
+  transition: background-color .2s;
+  border-radius: 4px;
+}
+
+.is-phone .nav-folder-title {
+    font-size: 1em !important;
+    font-weight: bold !important;
+    margin-bottom: 10px;
+}
+
 .nav-folder.mod-root>.nav-folder-title {
     font-size: 1.2em !important;
     margin-top: 15px;
     margin-bottom: 15px;
     color: var(--text-accent) !important;
-}
-
-.tree-item-self {
-    font-size: 1em;
-}
-
-.theme-light .tree-item-self {
-    color: #000 !important;
 }
 
 .view-header {
@@ -2319,10 +2408,6 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover,
     border: none;
 }
 
-.theme-light .collapse-icon svg.svg-icon {
-    color: black;
-}
-
 .theme-light .tree-item-self.mod-collapsible {
     border: none;
     font-weight: inherit;
@@ -2598,7 +2683,7 @@ svg.svg-icon {
 }
 
 .suggestion-container.mod-search-suggestion .suggestion {
-    color: #474747 !important;
+    color: var(--text-accent) !important;
     background: transparent !important;
 }
 
@@ -3262,7 +3347,7 @@ body.emulate-mobile button {
 }
 
 .community-item:hover {
-    border: none;
+    border: 1px solid var(--text-accent);
     background: var(--background-tertiary) !important;
 }
 
