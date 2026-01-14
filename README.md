@@ -9,7 +9,7 @@
 >> [!tip]+ Nested Numbers
 >> Structure your ideas with hierarchical numbering like 1.1, 1.2, 1.1.1 and beyond — perfect for complex outlines and ordered thinking.
 >
->> [!warning]+ Light Control
+>> [!bug]+ Light Control
 >> Fine-tune your brightness to match your environment and reduce eye strain. Small adjustments can make a big difference.
 
 ## 🎨 Setup
