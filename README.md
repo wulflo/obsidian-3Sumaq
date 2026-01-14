@@ -14,7 +14,12 @@
 	1. Pick accent color circle
 	2. Choose your favourite color
 
-<img width="500" height="398" border-radius=10px alt="logo2" src="https://github.com/user-attachments/assets/77c2991d-7ecc-41ce-877b-1997398348a9" />
+<p align="center">
+  <img src="[https://github.com/user-attachments/assets/77c2991d-7ecc-41ce-877b-1997398348a9](https://github.com/user-attachments/assets/77c2991d-7ecc-41ce-877b-1997398348a9)" 
+       alt="logo2" 
+       width="500" 
+       style="border-radius:20px;" />
+</p>
 
 # 🪧 Disclaimer
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
