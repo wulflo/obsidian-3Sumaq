@@ -1203,6 +1203,10 @@ a.external-link:hover {
     text-decoration: none !important;
 }
 
+.theme-light .markdown-source-view.mod-cm6 .cm-underline {
+    color: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 35%));
+}
+
 .mcm-column-border {
     border: none;
     box-shadow: none
