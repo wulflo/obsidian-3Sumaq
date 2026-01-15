@@ -23,7 +23,7 @@
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
 
 # 🌟 Credits
-+ **Inspired** by Minimal, Vicius and Prism theme (MIT license), Cards snippet (MIT license) and **MultiColumn** snippet (GNU license); but looking for simplicity. </br>
++ **Inspired** by Minimal, Vicious and Prism theme (MIT license), Cards snippet (MIT license) and **MultiColumn** snippet (GNU license); but looking for simplicity. </br>
 
 # ☕ Support
 + Send me your support: https://tecito.app/alonsoup </br>
