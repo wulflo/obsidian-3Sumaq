@@ -2372,8 +2372,8 @@ body:not(.vibrant-indents)
 	.HyperMD-list-line.cm-line
 	.cm-hmd-list-indent {
 	position: relative;
-	font-family: var(--vicious-indent-font-family) !important;
-	font-size: var(--vicious-indent-font-size) !important;
+	font-family: var(--colorines-indent-font-family) !important;
+	font-size: var(--colorines-indent-font-size) !important;
 	vertical-align: top;
 }
 
@@ -2382,16 +2382,16 @@ body:not(.vibrant-indents)
 	.HyperMD-list-line.cm-line
 	.cm-hmd-list-indent::before {
 	content: "";
-	font-family: var(--vicious-indent-font-family) !important;
-	font-size: var(--vicious-indent-font-size) !important;
+	font-family: var(--colorines-indent-font-family) !important;
+	font-size: var(--colorines-indent-font-size) !important;
 	display: block;
 	position: absolute;
 	width: 100%;
 	top: -1em;
 	padding-bottom: 999em;
-	background-image: var(--vicious-indent-colorful-bg);
-	background-size: var(--vicious-indent-bg-size);
-	left: var(--vicious-left-offset);
+	background-image: var(--colorines-indent-colorful-bg);
+	background-size: var(--colorines-indent-bg-size);
+	left: var(--colorines-left-offset);
 }
 
 body:not(.vibrant-indents)
