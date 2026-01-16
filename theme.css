@@ -54,7 +54,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     border-radius: var(--radius-s);
     cursor: var(--cursor);
     color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 40%)) !important;
-    font-size: 1em !important;
     font-weight: var(--nav-item-weight);
     line-height: var(--line-height-tight);
 }
@@ -64,6 +63,9 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 35%)) !important;
 }
 
+.tree-item-inner {
+    font-size: 1.08em !important;
+}
 
 .collapse-icon svg.svg-icon {
     color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 40%));
@@ -1780,7 +1782,7 @@ body {
     --accent-s: 80%;
     --accent-l: 68%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 55%));
-    --background-primary-alt: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 300), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
     --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 35%));
     --background-tertiary: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 50%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -3081,8 +3083,12 @@ body {
 
 button:not(.clickable-icon) {
     color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 100%));
-    background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 5%));
+    background-color: hsl(calc(var(--accent-h) + 50), var(--accent-s), calc(var(--accent-l) - 45%));
     box-shadow: var(--input-shadow);
+}
+
+button:not(.clickable-icon):hover {
+    background-color: hsl(calc(var(--accent-h) + 0), var(--accent-s), calc(var(--accent-l) - 45%));
 }
 
 .theme-light button:not(.clickable-icon) {
@@ -3195,25 +3201,25 @@ body.emulate-mobile button {
 .theme-dark .community-item {
     border: none;
     background: var(--background-secondary);
+    color: white;
+}
+
+.theme-dark .community-item.is-selected {
+    background-color: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 0%)) !important;
 }
 
 .community-item.is-selected,
 .community-item.is-selected .community-item-downloads,
 .community-item.is-selected .community-item-author {
-    color: var(--text-normal) !important;
-    font-weight: bold;
+    color: var(--text-normal);
 }
 
-.theme-dark .community-item.is-selected,
-.theme-dark .community-item.is-selected .community-item-downloads,
-.theme-dark .community-item.is-selected .community-item-author {
-    color: var(--text-muted) !important;
-    font-weight: bold;
+.theme-dark .community-item:hover, .community-item.is-selected:hover {
+    background: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 20%)) !important;
 }
 
-.community-item:hover {
-    border: 1px solid var(--text-accent);
-    background: var(--background-tertiary) !important;
+.theme-dark .community-item .svg-icon {
+    color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 100%));
 }
 
 .community-item .suggestion-highlight {
