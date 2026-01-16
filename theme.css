@@ -1251,7 +1251,15 @@ a.tag {
 .metadata-property input[type='datetime-local'],
 .metadata-property input[type='number'],
 .metadata-property .multi-select-container {
-    color: var(--text-accent);
+    color: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 35%));
+}
+
+.theme-dark .metadata-property input[type='text'],
+.theme-dark .metadata-property input[type='date'],
+.theme-dark .metadata-property input[type='datetime-local'],
+.theme-dark .metadata-property input[type='number'],
+.theme-dark .metadata-property .multi-select-container {
+    color: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 15%));
 }
 
 ol {
