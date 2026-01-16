@@ -1140,11 +1140,6 @@ th {
     max-width: 70%;
 }
 
-body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-formatting-list,
-body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-fold-indicator .collapse-indicator {
-    padding: 5px !important;
-}
-
 .cm-strong {
     font-size: 1.05em;
     font-weight: semibold;
@@ -1157,12 +1152,11 @@ body.outliner-plugin-dnd:not(.outliner-plugin-dragging) .cm-fold-indicator .coll
 
 .cm-em {
     font-size: 1.05em;
-    font-weight: 600;
     color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 35%));
 }
 
 .theme-dark .cm-em {
-    color: hsl(var(--accent-h), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 10%));
+    color: hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 10%));
 }
 
 a {
@@ -1240,9 +1234,9 @@ a.tag {
 .cm-s-obsidian span.cm-formatting-highlight,
 .cm-s-obsidian span.cm-highlight,
 .markdown-rendered mark {
-    background: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 35%)) !important;
-    padding-right: 3px;
-    padding-left: 3px;
+    background: hsl(calc(var(--accent-h) + 70), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 40%)) !important;
+    padding-right: 4px;
+    padding-left: 4px;
     border-radius: 4px;
 }
 
