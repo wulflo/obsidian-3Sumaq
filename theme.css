@@ -372,7 +372,7 @@ h2,
 .markdown-preview-view h3,
 .markdown-rendered h3 {
     border-bottom: 0.06em solid var(--text-accent);
-    padding: none;
+    padding: 0;
     width: fit-content;
     margin-left: 3px;
     margin-bottom: 8px;
@@ -445,7 +445,6 @@ h2,
 
 .theme-light .callout-title {
     text-shadow: none;
-    color: 2px solid hsl(var(green), calc(var(red) - 45%));
     filter: brightness(0.5);
 }
 
@@ -900,7 +899,7 @@ div[data-callout="multi-column"].callout>.callout-content>div[data-callout-metad
     text-align: center !important;
 }
 
-.theme-dark .markdown-source-view.mod-cm6 dataview.table-view-table .table-view-tbody tr {
+.theme-dark .markdown-source-view.mod-cm6 .dataview.table-view-table .table-view-tbody tr {
     background: hsl(230, 8%, 10%);
 }
 
