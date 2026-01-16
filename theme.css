@@ -215,7 +215,7 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
     color: var(--text-accent);
 }
 
-.suggestion-item.is-selected .suggestion-highlight {
+.theme-dark .suggestion-item.is-selected .suggestion-highlight {
     color: white !important;
 }
 
@@ -373,9 +373,7 @@ h2,
 .markdown-preview-view h3,
 .markdown-rendered h3 {
     border-bottom: 0.06em solid var(--text-accent);
-    padding-right: 3px;
-    padding-left: 3px;
-    padding-bottom: 4px;
+    padding: none;
     width: fit-content;
     margin-left: 3px;
     margin-bottom: 8px;
@@ -2293,7 +2291,7 @@ body {
     --accent-h: 254;
     --accent-l: 68%;
     --background-primary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 40%));
-    --background-primary-alt: var(--color-base-10);
+    --background-primary-alt: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 25%));
     --background-secondary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 18%));
     --background-tertiary: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 18%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -2498,6 +2496,15 @@ body .workspace-tab-header .workspace-tab-header-inner-title {
 .theme-light .tree-item-self.mod-collapsible {
     border: none;
     font-weight: inherit;
+}
+
+body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+    box-shadow: none;
+    border: 2px solid hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
+}
+
+.theme-dark:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
+    border: 2px solid hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 20%));
 }
 
 .workspace-ribbon {
