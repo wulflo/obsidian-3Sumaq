@@ -94,17 +94,17 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 
 .theme-dark {
-    --C001: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C002: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C003: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C004: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C005: hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C006: hsl(calc(var(--accent-h) + 70), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C007: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C008: hsl(calc(var(--accent-h) + 90), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C009: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C010: hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
-    --C011: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%));
+    --C001: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C002: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C003: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C004: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C005: hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C006: hsl(calc(var(--accent-h) + 70), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C007: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C008: hsl(calc(var(--accent-h) + 90), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C009: hsl(calc(var(--accent-h) + 80), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C010: hsl(calc(var(--accent-h) + 60), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --C011: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+2),
@@ -1781,10 +1781,10 @@ body {
     --accent-h: 254;
     --accent-s: 80%;
     --accent-l: 68%;
-    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 55%));
-    --background-primary-alt: hsl(calc(var(--accent-h) + 300), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 35%));
-    --background-tertiary: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 50%));
+    --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 55%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
+    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 35%));
+    --background-tertiary: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-modifier-border: var(--color-base-30);
@@ -2501,6 +2501,10 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
     border-bottom: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 25%));
 }
 
+.setting-group .setting-item {
+    border: none;
+}
+
 svg.svg-icon {
     color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%))
 }
@@ -3081,20 +3085,14 @@ body {
     background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 10%)) !important;
 }
 
-button:not(.clickable-icon) {
-    color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 100%));
-    background-color: hsl(calc(var(--accent-h) + 50), var(--accent-s), calc(var(--accent-l) - 45%));
-    box-shadow: var(--input-shadow);
-}
-
-button:not(.clickable-icon):hover {
-    background-color: hsl(calc(var(--accent-h) + 0), var(--accent-s), calc(var(--accent-l) - 45%));
-}
-
 .theme-light button:not(.clickable-icon) {
     color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 100%));
     background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 45%));
     box-shadow: var(--input-shadow);
+}
+
+button.mod-cta {
+    --text-color: var(--text-normal);
 }
 
 .chat-input-container {
@@ -3153,7 +3151,7 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control select,
 .workspace-drawer-active-tab-header select,
 .workspace-drawer-active-tab-header {
-    background: var(--background-tertiary);
+    background: var(--background-secondary);
 }
 
 .is-mobile .workspace-drawer-active-tab-container {
@@ -3204,8 +3202,12 @@ body.emulate-mobile button {
     color: white;
 }
 
+.community-item.is-selected {
+    background-color: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 10%)) !important;
+}
+
 .theme-dark .community-item.is-selected {
-    background-color: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 0%)) !important;
+    background-color: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 30%)) !important;
 }
 
 .community-item.is-selected,
@@ -3214,12 +3216,20 @@ body.emulate-mobile button {
     color: var(--text-normal);
 }
 
+.community-item:hover, .community-item.is-selected:hover {
+    background: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 10%));
+}
+
 .theme-dark .community-item:hover, .community-item.is-selected:hover {
-    background: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 20%)) !important;
+    background: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 20%));
 }
 
 .theme-dark .community-item .svg-icon {
     color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 100%));
+}
+
+.theme-dark .svg-icon {
+    color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 20%));
 }
 
 .community-item .suggestion-highlight {
