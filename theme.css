@@ -299,11 +299,11 @@ input.prompt-input {
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .markdown-preview-section h1 {
-    background: linear-gradient(to right, hsla(var(--interactive-accent-hsl), 0.3), hsla(var(--interactive-accent-hsl), 0.7), hsla(var(--interactive-accent-hsl), 0.1) 95%);
+    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 25%))) ;
     border-radius: 10px;
     padding: 4px 10px 4px 10px !important;
     width: fit-content;
-    text-shadow: 2px 2px 4px black;
+    text-shadow: 0px 0px 4px black;
 }
 
 .theme-light .markdown-preview-view h1,
@@ -316,12 +316,12 @@ input.prompt-input {
 .HyperMD-list-line .cm-header-1,
 h1,
 .markdown-rendered h1 {
-    background: linear-gradient(to right, hsla(var(--interactive-accent-hsl), 0.3), hsla(var(--interactive-accent-hsl), 0.7), hsla(var(--interactive-accent-hsl), 0.1) 95%);
+    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 25%)));
     border-radius: 10px;
     padding: 4px 10px 4px 10px !important;
     width: fit-content;
     margin-bottom: 15px !important;
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 4px black;
 }
 
 .theme-light .HyperMD-list-line .cm-header-1,
@@ -376,7 +376,6 @@ h2,
     border-bottom: 0.06em solid var(--text-accent);
     padding: 0;
     width: fit-content;
-    margin-left: 3px;
     margin-bottom: 8px;
 }
 
@@ -1782,7 +1781,7 @@ body {
     --accent-s: 80%;
     --accent-l: 68%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 55%));
-    --background-primary-alt: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
+    --background-primary-alt: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 50%));
     --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 35%));
     --background-tertiary: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 50%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -3085,16 +3084,6 @@ body {
     background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 10%)) !important;
 }
 
-.theme-light button:not(.clickable-icon) {
-    color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 100%));
-    background-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 45%));
-    box-shadow: var(--input-shadow);
-}
-
-button.mod-cta {
-    --text-color: var(--text-normal);
-}
-
 .chat-input-container {
     margin-bottom: 30px;
     flex-direction: column;
@@ -3134,13 +3123,12 @@ button.mod-cta {
 }
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-tertiary);
-    border: 1px solid hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 15%)) !important;
+    background: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 5%));
+    border: none !important;
 }
 
 .theme-dark .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-tertiary);
-    border: 1px solid hsl(calc(var(--accent-h) + 330), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 0%)) !important;
+    background: var(--background-primary);
 }
 
 textarea:active, .multi-select-container:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, .multi-select-container:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, .multi-select-container:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
@@ -3152,6 +3140,16 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 .workspace-drawer-active-tab-header select,
 .workspace-drawer-active-tab-header {
     background: var(--background-secondary);
+}
+
+.theme-dark button.mod-cta {
+    background-color: var(--text-accent) !important;
+    color: var(--text-on-accent)
+}
+
+.theme-light button.mod-cta {
+    background-color: var(--background-tertiary) !important;
+    color: var(--text-normal)
 }
 
 .is-mobile .workspace-drawer-active-tab-container {
@@ -3207,7 +3205,7 @@ body.emulate-mobile button {
 }
 
 .theme-dark .community-item.is-selected {
-    background-color: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 30%)) !important;
+    background-color: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 0%)) !important;
 }
 
 .community-item.is-selected,
@@ -3217,7 +3215,7 @@ body.emulate-mobile button {
 }
 
 .community-item:hover, .community-item.is-selected:hover {
-    background: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 10%));
+    background: var(--background-primary-alt);
 }
 
 .theme-dark .community-item:hover, .community-item.is-selected:hover {
