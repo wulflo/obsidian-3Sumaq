@@ -2653,12 +2653,12 @@ cite {
 .container#calendar-container .calendar {
     &>thead>tr:first-of-type {
         &>th:nth-child(1) {color: rgb(255, 0, 128);}
-        &>th:nth-child(2) {color: rgb(255, 128, 0);}
+        &>th:nth-child(2) {color: rgb(144, 78, 13);}
         &>th:nth-child(3) {color: rgb(0, 128, 128);}
         &>th:nth-child(4) {color: rgb(180, 49, 180);}
         &>th:nth-child(5) {color: rgb(201, 46, 100);}
         &>th:nth-child(6) {color: rgb(32, 129, 144);}
-        &>th:nth-child(7) {color: rgb(255, 94, 255);}
+        &>th:nth-child(7) {color: rgb(186, 45, 186);}
     };
     background: var(--background-tertiary);
 }
