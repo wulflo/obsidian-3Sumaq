@@ -299,7 +299,7 @@ input.prompt-input {
 .markdown-preview-view h1,
 .HyperMD-header-1,
 .markdown-preview-section h1 {
-    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 25%))) ;
+    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 25%))) ;
     border-radius: 10px;
     padding: 4px 10px 4px 10px !important;
     width: fit-content;
@@ -316,7 +316,7 @@ input.prompt-input {
 .HyperMD-list-line .cm-header-1,
 h1,
 .markdown-rendered h1 {
-    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 25%)));
+    background-image: linear-gradient(to left, hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 25%)), hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 25%)));
     border-radius: 10px;
     padding: 4px 10px 4px 10px !important;
     width: fit-content;
@@ -3143,7 +3143,7 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 }
 
 .theme-dark button.mod-cta {
-    background-color: var(--text-accent) !important;
+    background-color: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 20%)) !important;
     color: var(--text-on-accent)
 }
 
