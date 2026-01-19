@@ -383,9 +383,9 @@ h2,
 .theme-dark,
 .theme-light {
     --callout-border-width: 0px;
-    --callout-border-opacity: 0.4;
+    --callout-border-opacity: 0;
     --callout-padding: 4px 11px 11px 11px !important;
-    --callout-radius: 16px !important;
+    --callout-radius: 10px !important;
     --callout-blend-mode: var(--highlight-mix-blend-mode);
     --callout-title-padding: 0;
     --callout-title-background: transparent;
@@ -393,22 +393,12 @@ h2,
     --callout-content-padding: 0px 12px;
 }
 
-.theme-light {
-    --callout-border-width: 2px !important;
-    --callout-border-opacity: 0.7;
-}
-
-.theme-light p {
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-}
-
 .callout-title-inner,
 .callout-fold,
 .callout-icon {
     padding-top: 6px;
     padding-bottom: 6px;
-    font-size: 1.1em !important;
+    font-size: 1.05rem !important;
 }
 
 .callout del {
@@ -421,12 +411,7 @@ h2,
 }
 
 .callout-title {
-    padding: 6px 6px;
-}
-
-.theme-light .callout-title {
-    text-shadow: none;
-    filter: brightness(0.5);
+    padding: 2px;
 }
 
 .callout-title-inner,
@@ -449,10 +434,10 @@ h2,
 }
 
 .callout-content {
-    border-radius: 15px;
+    border-radius: 10px;
     background: inherit !important;
-    padding-bottom: 15px;
-    padding-top: 15px;
+    padding-bottom: 2px;
+    padding-top: 2px;
 }
 
 .theme-dark .callout-content {
@@ -462,11 +447,6 @@ h2,
 .theme-light .callout-content {
     padding-right: 15px;
     padding-left: 15px;
-}
-
-.markdown-rendered thead>tr>th,
-.markdown-rendered tbody>tr>td {
-    text-align: left !important;
 }
 
 .callout[data-callout="anki"] {
@@ -898,6 +878,11 @@ th {
     background: var(--background-tertiary) !important;
 }
 
+.markdown-rendered thead>tr>th,
+.markdown-rendered tbody>tr>td {
+    text-align: left !important;
+}
+
 .markdown-rendered td,
 .markdown-preview-view .dataview.table-view-table .table-view-tbody td {
     background: var(--background-table) !important;
@@ -1206,30 +1191,6 @@ body {
     --bold-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 5%));
     --border-width: 1px;
     --button-radius: var(--input-radius);
-    --callout-border-width: 0px;
-    --callout-border-opacity: 0.25;
-    --callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);
-    --callout-radius: var(--radius-s);
-    --callout-blend-mode: var(--highlight-mix-blend-mode);
-    --callout-title-color: inherit;
-    --callout-title-padding: 0;
-    --callout-title-size: inherit;
-    --callout-content-padding: 0;
-    --callout-content-background: transparent;
-    --callout-bug: var(--color-red-rgb);
-    --callout-default: var(--color-blue-rgb);
-    --callout-error: var(--color-red-rgb);
-    --callout-example: var(--color-purple-rgb);
-    --callout-fail: var(--color-red-rgb);
-    --callout-important: var(--color-cyan-rgb);
-    --callout-info: var(--color-blue-rgb);
-    --callout-question: var(--color-yellow-rgb);
-    --callout-success: var(--color-green-rgb);
-    --callout-summary: var(--color-cyan-rgb);
-    --callout-tip: var(--color-cyan-rgb);
-    --callout-todo: var(--color-blue-rgb);
-    --callout-warning: var(--color-orange-rgb);
-    --callout-quote: 158, 158, 158;
     --canvas-background: var(--background-primary);
     --canvas-card-label-color: var(--text-faint);
     --canvas-color-1: var(--color-red-rgb);
@@ -1702,27 +1663,6 @@ body {
 .theme-light {
     --bold-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 40%));
     --button-radius: var(--input-radius);
-    --callout-border-opacity: 0.25;
-    --callout-radius: var(--radius-s);
-    --callout-blend-mode: var(--highlight-mix-blend-mode);
-    --callout-title-color: inherit;
-    --callout-title-padding: 0;
-    --callout-content-padding: 0;
-    --callout-content-background: transparent;
-    --callout-bug: var(--color-red-rgb);
-    --callout-default: var(--color-blue-rgb);
-    --callout-error: var(--color-red-rgb);
-    --callout-example: var(--color-purple-rgb);
-    --callout-fail: var(--color-red-rgb);
-    --callout-important: var(--color-cyan-rgb);
-    --callout-info: var(--color-blue-rgb);
-    --callout-question: var(--color-yellow-rgb);
-    --callout-success: var(--color-green-rgb);
-    --callout-summary: var(--color-cyan-rgb);
-    --callout-tip: var(--color-cyan-rgb);
-    --callout-todo: var(--color-blue-rgb);
-    --callout-warning: var(--color-orange-rgb);
-    --callout-quote: 158, 158, 158;
     --canvas-background: var(--background-primary);
     --canvas-card-label-color: var(--text-faint);
     --canvas-color-1: var(--color-red-rgb);
@@ -2349,9 +2289,11 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
 }
 
 .markdown-preview-view blockquote, .markdown-source-view.mod-cm6.is-live-preview .HyperMD-quote {
-    font-size: 1.15em;
-    font-weight: bold;
-    padding: 8px 12px 8px 32px;
+    width: fit-content;
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: semibold;
+    padding: 8px 22px 8px 42px;
     border: 2px dashed var(--text-accent);
     color: var(--text-muted);
     position: relative;
