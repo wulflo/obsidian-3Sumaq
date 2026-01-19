@@ -174,7 +174,7 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 .view-header {
     background: var(--background-secondary) !important;
     border-radius: 5px;
-    width: 99%;
+    width: 96%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 4px;
@@ -928,7 +928,7 @@ div[data-callout="multi-column"].callout>.callout-content>div[data-callout-metad
 }
 
 th {
-    background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 20%)) !important;
+    background: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 40%)) !important;
 }
 
 .theme-light th {
@@ -1717,28 +1717,6 @@ body {
     --tab-stacked-text-transform: rotate(0deg);
     --tab-stacked-text-writing-mode: vertical-lr;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
-    --table-background: transparent;
-    --table-border-width: 1px;
-    --table-border-color: var(--background-modifier-border);
-    --table-white-space: normal;
-    --table-header-background: var(--table-background);
-    --table-header-background-hover: inherit;
-    --table-header-border-width: var(--table-border-width);
-    --table-header-border-color: var(--table-border-color);
-    --table-header-font: inherit;
-    --table-header-size: var(--font-text-size);
-    --table-header-weight: var(--bold-weight);
-    --table-header-color: var(--text-normal);
-    --table-line-height: var(--line-height-tight);
-    --table-text-size: inherit;
-    --table-text-color: inherit;
-    --table-column-max-width: none;
-    --table-column-alt-background: var(--table-background);
-    --table-column-first-border-width: var(--table-border-width);
-    --table-column-last-border-width: var(--table-border-width);
-    --table-row-background-hover: var(--table-background);
-    --table-row-alt-background: var(--table-background);
-    --table-row-last-border-width: var(--table-border-width);
     --tag-size: var(--font-smaller);
     --tag-color: var(--text-accent);
     --tag-color-hover: var(--text-accent);
@@ -2024,20 +2002,6 @@ body {
     --tab-stacked-text-transform: rotate(0deg);
     --tab-stacked-text-writing-mode: vertical-lr;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
-    --table-background: transparent;
-    --table-border-color: var(--background-modifier-border);
-    --table-white-space: normal;
-    --table-header-background: var(--table-background);
-    --table-header-background-hover: inherit;
-    --table-header-border-color: var(--table-border-color);
-    --table-header-font: inherit;
-    --table-header-color: var(--text-normal);
-    --table-line-height: var(--line-height-tight);
-    --table-text-color: inherit;
-    --table-column-max-width: none;
-    --table-column-alt-background: var(--table-background);
-    --table-row-background-hover: var(--table-background);
-    --table-row-alt-background: var(--table-background);
     --tag-color: var(--text-accent);
     --tag-color-hover: var(--text-accent);
     --tag-decoration: none;
@@ -2594,8 +2558,8 @@ div[data-callout="multi-column"].callout:not(.is-collapsed) {
 
 .view-content>.markdown-source-view.mod-cm6>.cm-editor>.cm-scroller {
     background-image: var(--background-primary);
-    padding-right: 8%;
-    padding-left: 8%;
+    padding-right: 4%;
+    padding-left: 4%;
 }
 
 .markdown-embed {
