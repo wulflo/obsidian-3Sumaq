@@ -1545,7 +1545,7 @@ body {
     --slider-track-height: 3px;
     --status-bar-background: var(--background-tertiary) !important;
     --status-bar-border-color: var(--text-accent);
-    --status-bar-border-width: 1px 0 0 1px;
+    --status-bar-border-width: 0px;
     --status-bar-font-size: var(--font-ui-smaller);
     --status-bar-text-color: var(--text-muted);
     --status-bar-position: fixed;
