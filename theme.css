@@ -85,17 +85,17 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 
 .theme-dark {
-    --A01: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A02: hsl(calc(var(--accent-h) + 5), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A03: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A04: hsl(calc(var(--accent-h) + 15), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A05: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A06: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A07: hsl(calc(var(--accent-h) + 35), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A08: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A09: hsl(calc(var(--accent-h) + 15), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A10: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
-    --A11: hsl(calc(var(--accent-h) + 5), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 40%));
+    --A01: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A02: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A03: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A04: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A05: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A06: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A07: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A08: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A09: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A10: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A11: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+2),
