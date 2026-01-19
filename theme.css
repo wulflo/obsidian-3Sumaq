@@ -241,16 +241,20 @@ input.prompt-input {
 
 .mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner, .mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
     background-color: var(--background-secondary);
-    padding: 3px;
+    padding: 1px;
     border-radius: 5px;
 }
 
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-    background: var(--background-primary) !important;
-    border: 1px solid var(--text-accent);
-    border-radius: 5px;
-    margin-bottom: 1px;
+    background: none !important;
+    border-bottom: 4px solid hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 0%)) !important;
+    border-radius: 0px;
+}
+
+.theme-dark .mod-left-split .workspace-tab-header.is-active,
+.theme-dark .mod-right-split .workspace-tab-header.is-active {
+    border-bottom: 4px solid hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 20%)) !important;
 }
 
 .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
@@ -1529,7 +1533,6 @@ body {
     --list-indent: 3em;
     --list-spacing: 0.2em;
     --list-marker-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) + 35%));
-    ;
     --list-marker-color-hover: var(--text-accent) !important;
     --list-marker-color-collapsed: var(--text-accent);
     --list-bullet-border: none;
