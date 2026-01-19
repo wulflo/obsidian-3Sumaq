@@ -1582,7 +1582,7 @@ body {
     --slider-s-thumb-position: -5px;
     --slider-track-background: var(--background-modifier-border);
     --slider-track-height: 3px;
-    --status-bar-background: hsla(var(--color-accent-hsl), 0.2) !important;
+    --status-bar-background: var(--background-tertiary) !important;
     --status-bar-border-color: var(--text-accent);
     --status-bar-border-width: 1px 0 0 1px;
     --status-bar-font-size: var(--font-ui-smaller);
@@ -1879,7 +1879,7 @@ body {
     --sidebar-tab-text-display: none;
     --slider-thumb-border-color: var(--background-modifier-border-hover);
     --slider-track-background: var(--background-modifier-border);
-    --status-bar-background: hsla(var(--color-accent-hsl), 0.2) !important;
+    --status-bar-background: var(--background-secondary) !important;
     --status-bar-border-color: var(--text-accent);
     --status-bar-text-color: var(--text-muted);
     --status-bar-position: fixed;
@@ -2140,7 +2140,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 .modal-bg {
-    background: var(--background-tertiary);
+    background: var(--background-table);
 }
 
 .modal-sidebar {
@@ -2779,12 +2779,6 @@ body {
     border: 1px solid hsla(var(--interactive-accent-hsl), 0.7) !important;
 }
 
-.status-bar {
-    background: var(--background-secondary);
-    border: none !important;
-    padding-left: 0;
-}
-
 .empty-state-action {
     background-color: var(--background-tertiary);
     color: var(--text-muted);
@@ -2796,10 +2790,6 @@ body {
 .is-mobile .empty-state-action {
     background-color: var(--background-tertiary);
     color: var(--text-muted)
-}
-
-.theme-light .status-bar {
-    background: var(--background-secondary);
 }
 
 .workspace-split.mod-left-split>.workspace-leaf-resize-handle,
@@ -2857,7 +2847,7 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 
 .theme-dark button.mod-cta {
     background-color: var(--background-table) !important;
-    color: var(--text-on-accent);
+    color: var(--text-important);
 }
 
 .theme-light button.mod-cta {
