@@ -1719,9 +1719,9 @@ body {
     --heading-spacing: calc(var(--p-spacing) * 2.5);
     --hr-color: var(--background-modifier-border);
     --hr-thickness: 2px;
-    --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 40%));
+    --icon-color: hsl(var(--accent-h), var(--accent-s), calc(var(--accent-l) - 50%));
     --icon-color-hover: var(--text-muted);
-    --icon-color-active: var(--text-accent);
+    --icon-color-active: var(--icon-color);
     --icon-color-focused: var(--text-normal);
     --icon-opacity: 0.85;
     --icon-opacity-hover: 1;
