@@ -247,15 +247,10 @@ input.prompt-input {
 
 .mod-left-split .workspace-tab-header.is-active,
 .mod-right-split .workspace-tab-header.is-active {
-    background: var(--background-tertiary) !important;
+    background: var(--background-primary) !important;
     border: 1px solid var(--text-accent);
     border-radius: 5px;
     margin-bottom: 1px;
-}
-
-.theme-light .mod-left-split .workspace-tab-header.is-active,
-.theme-light .mod-right-split .workspace-tab-header.is-active {
-    background: var(--background-primary) !important;
 }
 
 .mod-left-split .workspace-tab-header.has-active-menu .workspace-tab-header-inner-icon,
