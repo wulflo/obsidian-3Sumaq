@@ -2770,7 +2770,6 @@ body {
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
     background: var(--text-accent);
-    height: 2px;
     border: none !important;
 }
 
