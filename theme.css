@@ -1617,9 +1617,9 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 254;
+    --accent-h: 50;
     --accent-s: 80%;
-    --accent-l: 68%;
+    --accent-l: 65%;
     --background-primary: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 55%));
     --background-primary-alt: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 50%));
     --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 35%));
@@ -1865,8 +1865,9 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 254;
-    --accent-l: 68%;
+    --accent-h: 150;
+    --accent-s: 70%; 
+    --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 40%));
     --background-primary-alt: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 25%));
     --background-secondary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 15%));
@@ -2768,12 +2769,9 @@ body {
 }
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-secondary) !important;
+    background: var(--text-accent);
+    height: 2px;
     border: none !important;
-}
-
-.theme-dark .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-secondary);
 }
 
 textarea:active, .multi-select-container:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, .multi-select-container:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, .multi-select-container:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
