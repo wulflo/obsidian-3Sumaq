@@ -1887,7 +1887,7 @@ body {
     --background-modifier-success: var(--color-green);
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-form-field: var(--color-base-00);
-    --background-highlight: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 60%), calc(var(--accent-l) + 21%));
+    --background-highlight: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 10%));
     --text-normal: var(--color-base-100);
     --text-important: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 55%));
     --text-title: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 35%));
