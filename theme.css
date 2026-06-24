@@ -555,7 +555,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 305;
+    --accent-h: 58;
     --accent-s: 80%;
     --accent-l: 65%;
     --background-primary: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 50%));
