@@ -9,21 +9,15 @@
 >> [!tip]+ Nested Numbers
 >> Structure your ideas with hierarchical numbering like 1.1, 1.2, 1.1.1 and beyond — perfect for complex outlines and ordered thinking.
 >
->> [!success]+ Colorful Highlights
->> Make your text stand out with vibrant, rich "==" highlights "==" designed to draw your eyes instantly to key terms.
->
 >> [!info]+ Eye-Friendly Adjustments
 >> All theme colors have been fine-tuned and softened to completely eliminate glare and prevent visual fatigue during long reading sessions.
->
->> [!quote]+ Flashcard Glow Effect
->> Turn any paragraph into an active recall prompt. Adding the "#" + "flashcard" tag makes the entire line glow with a soft, distinct background effect.
 
-## 🎨 Setup
-1. Go to appearance
-	1. Pick accent color circle
-	2. Choose your favourite color
-
-+ If you add "cards" to the cssclasses note property, it enables the cards view for Dataview queries.
+1. Colorful Highlights
+	1. Make your text stand out with vibrant, rich ==highlights== designed to draw your eyes instantly to key terms.
+2. Flashcard Glow Effect
+	1. Turn any paragraph into an active recall prompt. 
+		1. Adding the #flashcard tag makes the entire line glow with a soft, distinct background effect.
+3. If you add "cards" to the cssclasses note property, it enables the cards view for Dataview queries.
 
 ```markdown
 > [!supercallout] Callouts
@@ -35,6 +29,12 @@
 >> Description text for your second callout
 > ...
 ```
+
+## 🎨 Setup
+
++ Go to appearance
+	+ Pick accent color circle
+	+ Choose your favourite color
 
 <img width="400" height="400" alt="coverreadme" src="https://github.com/user-attachments/assets/a9908336-e7f8-4905-a4a6-94220d8e0d2d" />
 
