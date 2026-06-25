@@ -2504,7 +2504,7 @@ input[type='range'] {
 }
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-search);
+    background: var(--background-button);
     border: none;
 }
 
