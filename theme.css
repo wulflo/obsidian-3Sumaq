@@ -528,7 +528,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 44;
+    --accent-h: 190;
     --accent-s: 80%;
     --accent-l: 65%;
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 10%);
@@ -780,7 +780,7 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 233;
+    --accent-h: 0;
     --accent-s: 70%; 
     --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 25%, 97%);
