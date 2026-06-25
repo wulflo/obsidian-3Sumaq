@@ -10,13 +10,13 @@
 >> Structure your ideas with hierarchical numbering like 1.1, 1.2, 1.1.1 and beyond — perfect for complex outlines and ordered thinking.
 >
 >> [!success]+ Colorful Highlights
->> Make your text stand out with vibrant, rich ==highlights== designed to draw your eyes instantly to key terms.
+>> Make your text stand out with vibrant, rich "==" highlights "==" designed to draw your eyes instantly to key terms.
 >
 >> [!info]+ Eye-Friendly Adjustments
 >> All theme colors have been fine-tuned and softened to completely eliminate glare and prevent visual fatigue during long reading sessions.
 >
 >> [!quote]+ Flashcard Glow Effect
->> Turn any paragraph into an active recall prompt. Adding the #flashcard tag makes the entire line glow with a soft, distinct background effect.
+>> Turn any paragraph into an active recall prompt. Adding the "#" + "flashcard" tag makes the entire line glow with a soft, distinct background effect.
 
 ## 🎨 Setup
 1. Go to appearance
