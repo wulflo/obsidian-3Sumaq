@@ -60,11 +60,8 @@ body, .theme-light, .theme-dark {
     font-family: var(--font-interface);
 }
 
-.markdown-rendered code,
-.cm-codeblock,
-.code-block,
+.markdown-rendered code, .cm-codeblock, .code-block,
 pre {
-    /* Agregamos 'Consolas' y 'Segoe UI Symbol' para asegurar legibilidad y símbolos nativos en Windows si falta la Nerd Font */
     --font-monospace: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", "Consolas", "Segoe UI Symbol", var(--font-default, monospace);
     font-family: var(--font-monospace);
 }
@@ -78,31 +75,31 @@ pre {
 }
 
 .theme-light {
-    --A01: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A02: hsl(calc(var(--accent-h) + 3), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A03: hsl(calc(var(--accent-h) + 6), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A04: hsl(calc(var(--accent-h) + 9), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A05: hsl(calc(var(--accent-h) + 12), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A06: hsl(calc(var(--accent-h) + 15), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A07: hsl(calc(var(--accent-h) + 18), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A08: hsl(calc(var(--accent-h) + 21), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A09: hsl(calc(var(--accent-h) + 24), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A10: hsl(calc(var(--accent-h) + 27), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
-    --A11: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 16%));
+    --A01: hsl(calc(var(--accent-h) - 0), 30%, 80%);
+    --A02: hsl(calc(var(--accent-h) - 15), 30%, 80%);
+    --A03: hsl(calc(var(--accent-h) - 30), 30%, 80%);
+    --A04: hsl(calc(var(--accent-h) - 45), 30%, 80%);
+    --A05: hsl(calc(var(--accent-h) - 60), 30%, 80%);
+    --A06: hsl(calc(var(--accent-h) - 75), 30%, 80%);
+    --A07: hsl(calc(var(--accent-h) - 90), 30%, 80%);
+    --A08: hsl(calc(var(--accent-h) - 105), 30%, 80%);
+    --A09: hsl(calc(var(--accent-h) - 120), 30%, 80%);
+    --A10: hsl(calc(var(--accent-h) - 135), 30%, 80%);
+    --A11: hsl(calc(var(--accent-h) - 150), 30%, 80%);
 }
 
 .theme-dark {
-    --A01: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A02: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A03: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A04: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A05: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A06: hsl(calc(var(--accent-h) + 50), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A07: hsl(calc(var(--accent-h) + 45), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A08: hsl(calc(var(--accent-h) + 40), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A09: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A10: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
-    --A11: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 40%));
+    --A01: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A02: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A03: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A04: hsl(calc(var(--accent-h) - 15), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A05: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A06: hsl(calc(var(--accent-h) - 25), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A07: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A08: hsl(calc(var(--accent-h) - 35), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A09: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A10: hsl(calc(var(--accent-h) - 45), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A11: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
 }
 
 body {
@@ -881,53 +878,77 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+2),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+2),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+2) { --colorful: var(--A01); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+2) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A01) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+3),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+3),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+3) { --colorful: var(--A02); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+3) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A02) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+4),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+4),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+4) { --colorful: var(--A03); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+4) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A03) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+5),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+5),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+5) { --colorful: var(--A04); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+5) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A04) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+6),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+6),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+6) { --colorful: var(--A05); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+6) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A05) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+7),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+7),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+7) { --colorful: var(--A06); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+7) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A06) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+8),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+8),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+8) { --colorful: var(--A07); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+8) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A07) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+9),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+9),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+9) { --colorful: var(--A08); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+9) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A08) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+10),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+10),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+10) { --colorful: var(--A09); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+10) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A09) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+11),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+11),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+11) { --colorful: var(--A10); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+11) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A10) 100%); 
+}
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+12),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+12),
-body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) { --colorful: var(--A11); }
+body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) { 
+    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A11) 100%); 
+}
 
 .nav-files-container > div > .nav-folder,
 [data-type="bookmarks"] .tree-item {
   background: var(--colorful);
   transition: background .2s;
-  border-radius: 4px;
+  border-radius: 3px;
+  margin-bottom: 4px;
+  padding: 2px;
 }
 
 .tree-item-self.mod-collapsible {
