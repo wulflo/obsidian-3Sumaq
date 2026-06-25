@@ -1,7 +1,7 @@
 # Universitario: **You pick the color**
 + A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
-> [!multi-column] For You
+> [!supercallout] For You
 >
 >> [!note]+ Try changing the color
 >> Colorful headings and callouts that match the color you choose.
@@ -11,6 +11,15 @@
 >
 >> [!bug]+ Light Control
 >> Fine-tune your brightness to match your environment and reduce eye strain. Small adjustments can make a big difference.
+>
+>> [!success]+ Soft Highlighting
+>> Use the #flashcard tag to highlight your text with soft, eye-pleasing colors that eliminate visual fatigue.
+>
+>> [!info]+ Tag-Triggered Color
+>> Muted, smooth tones that spotlight your text without the harsh glare—activated only by using the #flashcard tag.
+>
+>> [!quote]+ Smooth Highlighting
+>> Soft background contrast to reduce eye strain, applied automatically whenever you use the #flashcard tag.
 
 ## 🎨 Setup
 1. Go to appearance
