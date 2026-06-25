@@ -17,7 +17,7 @@
 2. Flashcard Glow Effect
 	1. Turn any paragraph into an active recall prompt. 
 		1. Adding the #flashcard tag makes the entire line glow with a soft, distinct background effect.
-3. If you add "cards" to the cssclasses note property, it enables the cards view for Dataview queries.
+3. If you add "collage" to the cssclasses note property, it enables the cards view for Dataview queries.
 
 ```markdown
 > [!supercallout] Callouts
