@@ -23,6 +23,8 @@
 	1. Pick accent color circle
 	2. Choose your favourite color
 
++ If you add "cards" to the cssclasses note property, it enables the cards view for Dataview queries.
+
 ```markdown
 > [!supercallout] Callouts
 >
