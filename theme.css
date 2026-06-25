@@ -785,7 +785,7 @@ body {
     --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 25%, 97%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 5 / 1), 20%, 94%);
-    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 22%, 95%);
+    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 22%, 85%);
     --background-secondary-alt: hsl(calc(var(--accent-h) + 10 / 1), 20%, 93%);
     --background-tertiary: hsl(calc(var(--accent-h) + 10 / 1), 18%, 91%);
     --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
