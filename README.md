@@ -12,14 +12,14 @@
 >> [!bug]+ Light Control
 >> Fine-tune your brightness to match your environment and reduce eye strain. Small adjustments can make a big difference.
 >
->> [!success]+ Soft Highlighting
->> Use the #flashcard tag to highlight your text with soft, eye-pleasing colors that eliminate visual fatigue.
+>> [!success]+ Try changing the color
+>> Colorful headings and callouts that match the color you choose.
 >
->> [!info]+ Tag-Triggered Color
->> Muted, smooth tones that spotlight your text without the harsh glare—activated only by using the #flashcard tag.
+>> [!info]+ Nested Numbers
+>> Structure your ideas with hierarchical numbering like 1.1, 1.2, 1.1.1 and beyond — perfect for complex outlines and ordered thinking.
 >
->> [!quote]+ Smooth Highlighting
->> Soft background contrast to reduce eye strain, applied automatically whenever you use the #flashcard tag.
+>> [!quote]+ Flashcard Highlighting
+>> Muted, smooth tones that spotlight your text without the harsh glare — activated only by using the #flashcard tag.
 
 ## 🎨 Setup
 1. Go to appearance
