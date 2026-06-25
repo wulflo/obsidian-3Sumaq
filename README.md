@@ -1,6 +1,10 @@
 # Universitario: **You pick the color**
 + A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
+<div align="center">
+<a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="tecito" src="https://github.com/user-attachments/assets/a9908336-e7f8-4905-a4a6-94220d8e0d2d" /></a>
+</div>
+
 > [!supercallout] For You
 >
 >> [!note]+ Try changing the color
@@ -36,8 +40,6 @@
 	+ Pick accent color circle
 	+ Choose your favourite color
 
-<img width="400" height="400" alt="coverreadme" src="https://github.com/user-attachments/assets/a9908336-e7f8-4905-a4a6-94220d8e0d2d" />
-
 # 🪧 Disclaimer
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
 
@@ -46,6 +48,7 @@
 + Include parts of Cards snippet (MIT license) and MultiColumn snippet (GNU license).
 
 # ☕ Support
-https://tecito.app/alonsoup </br>
-<img width="400" height="400" alt="tecito" src="https://github.com/user-attachments/assets/bbbae17f-b6e4-4765-9828-26bbbf2b6b68" />
 
+<div align="center">
+<a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer"><img width="384" height="256" alt="tecito" src="https://github.com/user-attachments/assets/5700b604-1701-472b-960f-93b1ac392567" /></a>
+</div>
