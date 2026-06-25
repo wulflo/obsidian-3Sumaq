@@ -468,7 +468,7 @@ body {
     --slider-s-thumb-position: -5px;
     --slider-track-background: var(--background-modifier-border);
     --slider-track-height: 3px;
-    --status-bar-background: var(--background-tertiary);
+    --status-bar-background: var(--background-secondary);
     --status-bar-border-color: var(--text-accent);
     --status-bar-border-width: 0px;
     --status-bar-font-size: var(--font-ui-smaller);
@@ -944,11 +944,11 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 
 .nav-files-container > div > .nav-folder,
 [data-type="bookmarks"] .tree-item {
-  background: var(--colorful);
+  background: inherit;
   transition: background .2s;
   border-radius: 3px;
   margin-bottom: 4px;
-  padding: 2px;
+  padding: 3px;
 }
 
 .tree-item-self.mod-collapsible {
