@@ -26,13 +26,25 @@
 	1. Pick accent color circle
 	2. Choose your favourite color
 
+```markdown
+> [!supercallout] Callouts
+>
+>> [!note]+ First Grouped Callout
+>> Description text for your first callout.
+>
+>> [!tip]+ Second Grouped Callout
+>> Description text for your second callout
+> ...
+```
+
 <img width="400" height="400" alt="coverreadme" src="https://github.com/user-attachments/assets/a9908336-e7f8-4905-a4a6-94220d8e0d2d" />
 
 # 🪧 Disclaimer
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
 
 # 🌟 Credits
-+ Inspired by Minimal, Vicious and Prism theme (MIT license), Cards snippet (MIT license) and MultiColumn snippet (GNU license); but looking for simplicity. </br>
++ Inspired by Minimal, Vicious and Prism theme (MIT license); but looking for simplicity. </br>
++ Include parts of Cards snippet (MIT license) and MultiColumn snippet (GNU license).
 
 # ☕ Support
 https://tecito.app/alonsoup </br>
