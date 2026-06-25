@@ -569,7 +569,7 @@ body {
     --background-modifier-success: var(--color-green);
     --background-modifier-message: rgba(0, 0, 0, 0.9);
     --background-modifier-form-field: var(--color-base-00);
-    --background-highlight: hsl(calc(var(--accent-h) + 70), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 40%));
+    --background-highlight: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 70%), calc(var(--accent-l) - 40%));
     --text-normal: var(--color-base-100);
     --text-important: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 30%));
     --text-title: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
@@ -697,7 +697,7 @@ body {
     --nav-item-weight-hover: inherit;
     --nav-item-weight-active: inherit;
     --nav-item-white-space: nowrap;
-    --nav-indentation-guide-color: transparent
+    --nav-indentation-guide-color: transparent;
     --nav-collapse-icon-color: var(--collapse-icon-color);
     --nav-collapse-icon-color-collapsed: var(--text-faint);
     --metadata-background: transparent;
@@ -933,11 +933,6 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 .tree-item-self.mod-collapsible {
     border: none;
 }
-
-.nav-files-container .nav-folder > .tree-item-self .tree-item-icon svg {
-    display: none !important;
-}
-
 .nav-files-container .tree-item-icon svg {
     display: none;
 }
@@ -952,7 +947,7 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 }
 
 .nav-files-container .tree-item-icon::before,
-.nav-files-container .nav-file > .tree-item-self .tree-item-inner::before {
+.nav-files-container .nav-file > .tree-item-self:not([data-icon]) .tree-item-inner::before {
     content: "";
     display: inline-block;
     width: 14px;
@@ -968,7 +963,7 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
     clip-path: path('M0 2h5l1.5 2H14v9H0V2zm1.5 3.5v6H12.5v-6h-11z');
 }
 
-.nav-files-container .nav-file > .tree-item-self .tree-item-inner::before {
+.nav-files-container .nav-file > .tree-item-self:not([data-icon]) .tree-item-inner::before {
     margin-right: 6px;
     vertical-align: middle;
     clip-path: path('M2 0h6l4 4v10H2V0zm1.5 1.5v11h7V5H7V1.5h-3.5z M5 6h4v1H5V6z M5 9h4v1H5V9z');
@@ -996,7 +991,6 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
     padding: 4px;
     border-radius: 4px;
     margin-left: 5px;
-    background: var(--background-secondary);
 }
 
 .nav-buttons-container,
@@ -2221,6 +2215,17 @@ a.tag {
     padding: 3px 5px;
 }
 
+.markdown-source-view.is-live-preview .cm-line:has(.cm-tag-flashcard),
+.markdown-source-view.is-live-preview .cm-line:has(.cm-tag-card) {
+    text-shadow: 0px 0px 20px var(--color-accent);
+    border-left: 4px solid var(--color-accent);
+    padding-left: 8px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 4px;
+    margin-bottom: 14px !important;
+}
+
 .metadata-properties-heading {
     padding-bottom: 5px;
     margin-bottom: 15px;
@@ -2234,18 +2239,6 @@ a.tag {
 .metadata-property .multi-select-container {
     color: var(--text-important);
 }
-
-.markdown-source-view.is-live-preview .cm-line:has(.cm-tag-flashcard),
-.markdown-source-view.is-live-preview .cm-line:has(.cm-tag-card) {
-    text-shadow: 0px 0px 20px var(--color-accent);
-    border-left: 4px solid var(--color-accent);
-    padding-left: 8px;
-    padding-bottom: 3px;
-    padding-top: 3px;
-    border-radius: 4px;
-    margin-bottom: 14px !important;
-}
-
 
 /* ==========================================================================
    9. IMÁGENES, EMBEBIDOS Y TOOLTIPS (IMAGES, EMBEDS & TOOLTIPS)
