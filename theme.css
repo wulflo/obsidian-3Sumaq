@@ -34,7 +34,7 @@
 
 TABLA DE CONTENIDOS (ÍNDICE)
 
-   1. LICENCIA E ÍNDICE
+   1. FUENTE GLOBAL
    2. VARIABLES GLOBALES Y TEMAS (ROOT, BODY, THEMES)
    3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
    4. TIPOGRAFÍA Y FORMATO MARKDOWN (TYPOGRAPHY & MARKDOWN FORMATTING)
@@ -51,6 +51,23 @@ TABLA DE CONTENIDOS (ÍNDICE)
 
 ---------------------------------------------------------------------------*/
 
+/* ==========================================================================
+   1. FUENTE GLOBAL
+   ========================================================================== */
+
+body, .theme-light, .theme-dark {
+    --font-interface: "Trebuchet MS", "Trebuchet", var(--font-default, sans-serif);
+    font-family: var(--font-interface);
+}
+
+.markdown-rendered code,
+.cm-codeblock,
+.code-block,
+pre {
+    /* Agregamos 'Consolas' y 'Segoe UI Symbol' para asegurar legibilidad y símbolos nativos en Windows si falta la Nerd Font */
+    --font-monospace: "JetBrainsMono Nerd Font", "FiraCode Nerd Font", "Consolas", "Segoe UI Symbol", var(--font-default, monospace);
+    font-family: var(--font-monospace);
+}
 
 /* ==========================================================================
    2. VARIABLES GLOBALES Y TEMAS (ROOT, BODY, THEMES)
@@ -531,11 +548,11 @@ body {
     --accent-h: 190;
     --accent-s: 80%;
     --accent-l: 65%;
-    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 10%);
-    --background-primary-alt: hsl(calc(var(--accent-h) + 5 / 1), 12%, 14%);
-    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 10%, 8%);
-    --background-secondary-alt: hsl(calc(var(--accent-h) + 10 / 1), 12%, 12%);
-    --background-tertiary: hsl(calc(var(--accent-h) + 10 / 1), 10%, 16%);
+    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 15%);
+    --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 14%, 12%);
+    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 22%, 9%);
+    --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 22%, 7%);
+    --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 18%);
     --background-button: hsl(calc(var(--accent-h) + 10 / 1), 50%, 36%);
     --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 35%, 24%);    
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
@@ -913,10 +930,48 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
   border-radius: 4px;
 }
 
-.is-phone .nav-folder-title {
-    font-size: 1em;
-    font-weight: bold;
-    margin-bottom: 10px;
+.tree-item-self.mod-collapsible {
+    border: none;
+}
+
+.nav-files-container .nav-folder > .tree-item-self .tree-item-icon svg {
+    display: none !important;
+}
+
+.nav-files-container .tree-item-icon svg {
+    display: none;
+}
+
+.nav-files-container .tree-item-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+    margin-right: 6px;
+}
+
+.nav-files-container .tree-item-icon::before,
+.nav-files-container .nav-file > .tree-item-self .tree-item-inner::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: var(--icon-color, currentColor);
+}
+
+.nav-files-container .nav-folder > .tree-item-self .tree-item-icon::before {
+    clip-path: path('M0 2h5l1.5 2H14v9H0V2zm1.5 3.5v6H12.5v-6h-11z M3 7h8v1H3V7z');
+}
+
+.nav-files-container .nav-folder.is-collapsed > .tree-item-self .tree-item-icon::before {
+    clip-path: path('M0 2h5l1.5 2H14v9H0V2zm1.5 3.5v6H12.5v-6h-11z');
+}
+
+.nav-files-container .nav-file > .tree-item-self .tree-item-inner::before {
+    margin-right: 6px;
+    vertical-align: middle;
+    clip-path: path('M2 0h6l4 4v10H2V0zm1.5 1.5v11h7V5H7V1.5h-3.5z M5 6h4v1H5V6z M5 9h4v1H5V9z');
 }
 
 .nav-folder.mod-root>.nav-folder-title {
@@ -928,7 +983,6 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 
 .view-header, .is-focused .workspace-leaf.mod-active .view-header {
     background: var(--background-primary);
-
 }
 
 .view-header-title-parent {
@@ -937,8 +991,12 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 }
 
 .view-header-title {
+    font-size: 1.05em;
     color: var(--text-important);
+    padding: 4px;
+    border-radius: 4px;
     margin-left: 5px;
+    background: var(--background-secondary);
 }
 
 .nav-buttons-container,
@@ -979,7 +1037,7 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
 
 .workspace-leaf-content {
     border-bottom: none;
-    background-color: var(--background-tertiary);
+    background: var(--background-tertiary);
 }
 
 .mod-left-split .workspace-leaf-content {
@@ -1060,9 +1118,6 @@ body .workspace-tab-header .workspace-tab-header-inner-title {
     border-bottom: var(--border-width) solid var(--text-normal);
 }
 
-.tree-item-self.mod-collapsible {
-    border: none;
-}
 
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
     box-shadow: none;
@@ -1165,7 +1220,7 @@ body {
     margin-bottom: -5px
 }
 
-.HyperMD-header .cm-header-1, .HyperMD-list-line .cm-header-1, h1, .markdown-rendered h1 {
+.HyperMD-header .cm-header-1, .HyperMD-list-line .cm-header-1, h1, .markdown-rendered h1, .inline-title:not([data-level]) {
     width: fit-content;
     margin-left: 6px;
     -webkit-text-stroke: 8px hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 10%));
@@ -1173,7 +1228,7 @@ body {
     paint-order: stroke fill;
 }
 
-.theme-dark .HyperMD-header .cm-header-1, .theme-dark .HyperMD-list-line .cm-header-1, .theme-dark h1, .theme-dark .markdown-rendered h1 {
+.theme-dark .HyperMD-header .cm-header-1, .theme-dark .HyperMD-list-line .cm-header-1, .theme-dark h1, .theme-dark .markdown-rendered h1, .theme-dark .inline-title:not([data-level]) {
     -webkit-text-stroke: 8px hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 40%));
     stroke-linejoin: round; /* Redondea los picos en el tema oscuro */
 }
@@ -1815,11 +1870,11 @@ body:not(.table-100):not(.table-max):not(.table-wide) .markdown-preview-view {
     --table-width: auto
 }
 
-.maximize-tables-auto .cards {
+.maximize-tables-auto .collage {
     --container-table-max-width: var(--max-width)
 }
 
-.maximize-tables-auto .cards .block-language-dataview {
+.maximize-tables-auto .collage .block-language-dataview {
     --table-margin: auto
 }
 
@@ -1842,12 +1897,12 @@ body {
     }
 }
 
-.cards.table-100 table.dataview tbody,
-.table-100 .cards table.dataview tbody {
+.collage.table-100 table.dataview tbody,
+.table-100 .collage table.dataview tbody {
     padding: .25rem .75rem
 }
 
-.cards table.dataview {
+.collage table.dataview {
     --table-width: 100%;
     --table-edge-cell-padding-first: calc(var(--cards-padding)/2);
     --table-edge-cell-padding-last: calc(var(--cards-padding)/2);
@@ -1856,7 +1911,7 @@ body {
 
 }
 
-.cards table.dataview tbody {
+.collage table.dataview tbody {
     clear: both;
     padding: .2rem 0.5rem;
     display: grid;
@@ -1866,7 +1921,7 @@ body {
     background: none;
 }
 
-.cards table.dataview>tbody>tr {
+.collage table.dataview>tbody>tr {
     background: var(--background-secondary);
     border: 2px solid var(--background-tertiary) !important;
     display: flex;
@@ -1879,62 +1934,62 @@ body {
     height: auto
 }
 
-.cards table.dataview>tbody>tr:hover {
+.collage table.dataview>tbody>tr:hover {
     border: var(--cards-border-width) solid var(--background-modifier-border-hover);
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, .05), 0 1px 3px 1px rgba(0, 0, 0, .025);
     transition: box-shadow .15s linear
 }
 
-.cards table.dataview tbody>tr>td:first-child {
+.collage table.dataview tbody>tr>td:first-child {
     font-weight: var(--bold-weight);
     border: none
 }
 
-.cards table.dataview tbody>tr>td:first-child a {
+.collage table.dataview tbody>tr>td:first-child a {
     display: block;
     font-weight: bold;
 }
 
-.cards table.dataview tbody>tr>td:last-child {
+.collage table.dataview tbody>tr>td:last-child {
     border: none
 }
 
-.cards table.dataview tbody>tr>td:not(:first-child) {
+.collage table.dataview tbody>tr>td:not(:first-child) {
     font-size: calc(var(--table-text-size) * .9);
     color: var(--text-muted)
 }
 
-.cards table.dataview tbody>tr>td>* {
+.collage table.dataview tbody>tr>td>* {
     padding: calc(var(--cards-padding)/3) 0
 }
 
-.cards table.dataview tbody>tr>td:not(:last-child):not(:first-child) {
+.collage table.dataview tbody>tr>td:not(:last-child):not(:first-child) {
     padding: 4px 0;
     border-bottom: 1px solid var(--text-muted);
     width: calc(100% - var(--cards-padding));
     margin: 0 calc(var(--cards-padding)/2)
 }
 
-.cards table.dataview tbody>tr>td a {
+.collage table.dataview tbody>tr>td a {
     text-decoration: none
 }
 
-.cards table.dataview tbody>tr>td>button {
+.collage table.dataview tbody>tr>td>button {
     width: 100%;
     margin: calc(var(--cards-padding)/2) 0
 }
 
-.cards table.dataview tbody>tr>td:last-child>button {
+.collage table.dataview tbody>tr>td:last-child>button {
     margin-bottom: calc(var(--cards-padding)/6)
 }
 
-.cards table.dataview tbody>tr>td>ul {
+.collage table.dataview tbody>tr>td>ul {
     width: 100%;
     padding: .25em 0;
     margin: 0 auto
 }
 
-.cards table.dataview tbody>tr>td:has(img) {
+.collage table.dataview tbody>tr>td:has(img) {
     padding: 0;
     background: var(--background-secondary);
     display: block;
@@ -1942,7 +1997,7 @@ body {
     width: 100%
 }
 
-.cards table.dataview tbody>tr>td img {
+.collage table.dataview tbody>tr>td img {
     aspect-ratio: var(--cards-aspect-ratio);
     width: 100%;
     object-fit: var(--cards-image-fit);
@@ -1951,33 +2006,33 @@ body {
     vertical-align: bottom
 }
 
-.markdown-source-view.mod-cm6.cards .dataview.table-view-table>tbody>tr>td,
-.trim-cols .cards table.dataview tbody>tr>td {
+.markdown-source-view.mod-cm6.collage .dataview.table-view-table>tbody>tr>td,
+.trim-cols .collage table.dataview tbody>tr>td {
     white-space: normal;
     text-align: center;
 }
 
-.links-int-on .cards table {
+.links-int-on .collage table {
     --link-decoration: none
 }
 
-.markdown-source-view.mod-cm6.cards .edit-block-button {
+.markdown-source-view.mod-cm6.collage .edit-block-button {
     top: -1px;
     right: 28px;
     opacity: 1
 }
 
-.cards.table-100 table.dataview thead>tr,
-.table-100 .cards table.dataview thead>tr {
+.collage.table-100 table.dataview thead>tr,
+.table-100 .collage table.dataview thead>tr {
     right: .75rem
 }
 
-.cards.table-100 table.dataview thead:before,
-.table-100 .cards table.dataview thead:before {
+.collage.table-100 table.dataview thead:before,
+.table-100 .collage table.dataview thead:before {
     margin-right: .75rem
 }
 
-.cards table.dataview thead {
+.collage table.dataview thead {
     user-select: none;
     width: 180px;
     display: block;
@@ -1989,16 +2044,16 @@ body {
     background: none;
 }
 
-.cards table.dataview thead:hover:after {
+.collage table.dataview thead:hover:after {
     background: var(--background-modifier-hover)
 }
 
-.cards table.dataview thead:hover:before {
+.collage table.dataview thead:hover:before {
     background: var(--text-muted)
 }
 
-.cards table.dataview thead:after,
-.cards table.dataview thead:before {
+.collage table.dataview thead:after,
+.collage table.dataview thead:before {
     content: '';
     position: absolute;
     right: 0;
@@ -2014,7 +2069,7 @@ body {
     font-size: var(--font-adaptive-small)
 }
 
-.cards table.dataview thead:before {
+.collage table.dataview thead:before {
     background: var(--text-faint);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-size: 16px;
@@ -2022,7 +2077,7 @@ body {
     -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="currentColor" d="M49.792 33.125l-5.892 5.892L33.333 28.45V83.333H25V28.45L14.438 39.017L8.542 33.125L29.167 12.5l20.625 20.625zm41.667 33.75L70.833 87.5l-20.625 -20.625l5.892 -5.892l10.571 10.567L66.667 16.667h8.333v54.883l10.567 -10.567l5.892 5.892z"></path></svg>')
 }
 
-.cards table.dataview thead>tr {
+.collage table.dataview thead>tr {
     top: -1px;
     position: absolute;
     display: none;
@@ -2037,12 +2092,12 @@ body {
     width: 100%
 }
 
-.cards table.dataview thead:hover>tr {
+.collage table.dataview thead:hover>tr {
     display: flex;
     height: auto
 }
 
-.cards table.dataview thead>tr>th {
+.collage table.dataview thead>tr>th {
     display: block;
     padding: 3px 30px 3px 6px;
     border-radius: var(--radius-s);
@@ -2054,12 +2109,12 @@ body {
     font-size: var(--font-ui-small)
 }
 
-.cards table.dataview thead>tr>th[sortable-style=sortable-asc],
-.cards table.dataview thead>tr>th[sortable-style=sortable-desc] {
+.collage table.dataview thead>tr>th[sortable-style=sortable-asc],
+.collage table.dataview thead>tr>th[sortable-style=sortable-desc] {
     color: var(--text-normal)
 }
 
-.cards table.dataview thead>tr>th:hover {
+.collage table.dataview thead>tr>th:hover {
     color: var(--text-normal);
     background: var(--background-modifier-hover)
 }
@@ -2132,17 +2187,17 @@ body {
     display: block
 }
 
-.cards table.dataview>tbody>tr {
+.collage table.dataview>tbody>tr {
     border: 1px solid hsla(var(--interactive-accent-hsl), 0.7);
 }
 
-.cards table.dataview {
+.collage table.dataview {
     --table-width: 100%;
     --table-min-width: none;
     background: inherit;
 }
 
-.is-phone .cards table.dataview tbody>tr>td a.external-link {
+.is-phone .collage table.dataview tbody>tr>td a.external-link {
     width: 8em;
 }
 
@@ -2420,7 +2475,7 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 }
 
 .community-item:hover, .community-item.is-selected:hover {
-    background: var(--background-table);
+    background: var(--background-secondary);
 }
 
 .community-item .suggestion-highlight {
@@ -2461,7 +2516,6 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 .is-phone .modal.mod-sidebar-layout .modal-title {
     background: inherit;
 }
-
 
 /* ==========================================================================
    12. ENTRADAS, BOTONES Y FORMULARIOS (INPUTS, BUTTONS & FORMS)
@@ -2504,8 +2558,8 @@ input[type='range'] {
 }
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
-    background: var(--background-button);
-    border: none;
+    background: var(--background-button-alt);
+    border: none !important;
 }
 
 textarea:active, .multi-select-container:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, .multi-select-container:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, .multi-select-container:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
@@ -2712,7 +2766,6 @@ g>g>path {
         &>th:nth-child(6) {color: rgb(32, 129, 144);}
         &>th:nth-child(7) {color: rgb(186, 45, 186);}
     };
-    background: inherit;
 }
 
 .theme-dark .container#calendar-container .calendar {
@@ -2727,6 +2780,13 @@ g>g>path {
     };
 }
 
+.calendar thead {
+    background: var(--background-secondary);
+}
+
+.calendar tbody {
+    background: var(--background-primary);
+}
 
 /* ==========================================================================
    14. MISCELÁNEOS Y CLASES DE APOYO (MISC & HELPERS)
