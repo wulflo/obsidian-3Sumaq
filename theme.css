@@ -275,7 +275,7 @@ body {
     --clickable-icon-radius: var(--radius-s);
     --indentation-guide-width: 2px;
     --indentation-guide-width-active: 2px;
-    --indentation-guide-color: var(--background-secondary);
+    --indentation-guide-color: var(--background-button);
     --indentation-guide-color-active: rgba(var(--mono-rgb-100), 1);
     --inline-title-color: var(--h1-color);
     --inline-title-font: var(--h1-font);
@@ -324,8 +324,8 @@ body {
     --list-marker-color-hover: var(--text-accent);
     --list-marker-color-collapsed: var(--text-accent);
     --list-bullet-border: none;
-    --list-bullet-radius: 50%;
-    --list-bullet-size: 0.3rem;
+    --list-bullet-radius: 35%;
+    --list-bullet-size: 0.35rem;
     --list-bullet-transform: none;
     --list-numbered-style: decimal;
     --nav-item-size: var(--font-ui-small);
@@ -658,7 +658,7 @@ body {
     --clickable-icon-radius: var(--radius-s);
     --indentation-guide-width: 2px;
     --indentation-guide-width-active: 2px;
-    --indentation-guide-color: var(--background-secondary);
+    --indentation-guide-color: var(--background-button);
     --indentation-guide-color-active: var(--text-accent);
     --italic-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 35%));
     --italic-weight: inherit;
