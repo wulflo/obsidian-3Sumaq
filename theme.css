@@ -542,15 +542,15 @@ body {
     --vault-name-font-weight: var(--font-medium);
     --vault-name-color: var(--text-normal);
     --workspace-background-translucent: rgba(var(--mono-rgb-0), 0.6);
-    --accent-h: 190;
+    --accent-h: 206;
     --accent-s: 80%;
     --accent-l: 65%;
-    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 15%);
-    --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 14%, 12%);
+    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 15%);
+    --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 12%, 12%);
     --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 22%, 9%);
-    --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 22%, 7%);
-    --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 18%);
-    --background-button: hsl(calc(var(--accent-h) + 10 / 1), 50%, 36%);
+    --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 20%, 7%);
+    --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 18%);
+    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 30%, 30%);
     --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 35%, 24%);    
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -879,67 +879,67 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+2),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+2),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+2) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A01) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A01) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+3),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+3),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+3) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A02) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A02) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+4),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+4),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+4) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A03) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A03) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+5),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+5),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+5) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A04) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A04) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+6),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+6),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+6) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A05) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A05) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+7),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+7),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+7) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A06) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A06) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+8),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+8),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+8) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A07) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A07) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+9),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+9),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+9) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A08) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A08) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+10),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+10),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+10) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A09) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A09) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+11),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+11),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+11) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A10) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A10) 100%); 
 }
 
 body:not(.vibrant-folders) .nav-folder-children > .nav-folder:nth-child(11n+12),
 body:not(.vibrant-folders) .nav-files-container > div > .nav-folder:nth-child(11n+12),
 body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) { 
-    background-image: linear-gradient(to right, var(--background-secondary) 60%, var(--A11) 100%); 
+    background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A11) 100%); 
 }
 
 .nav-files-container > div > .nav-folder,
@@ -956,7 +956,7 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-activ
 }
 
 [data-type="bookmarks"] .tree-item {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 
 .tree-item-self.mod-collapsible {
@@ -2592,14 +2592,9 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
     background: var(--background-button-alt);
 }
 
-.theme-dark button.mod-cta {
+button.mod-cta {
     background: var(--background-button) !important;
-    color: var(--text-normal);
-}
-
-.theme-light button.mod-cta {
-    background: var(--background-button) !important;
-    color: var(--text-normal);
+    color: var(--text-muted);
 }
 
 body.emulate-mobile button {
