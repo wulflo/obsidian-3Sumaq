@@ -951,6 +951,10 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
   padding: 3px;
 }
 
+[data-type="bookmarks"] .tree-item {
+    padding-left: 20px;
+}
+
 .tree-item-self.mod-collapsible {
     border: none;
 }
