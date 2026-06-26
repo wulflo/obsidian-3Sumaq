@@ -2,7 +2,7 @@
 > A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
 <div align="center">
-<a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="linktree" src="https://github.com/user-attachments/assets/b3864fc3-0e17-43f3-affd-8ab89e18617e" /></a>
+<a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="linktree" src="https://github.com/user-attachments/assets/8130e661-06f8-4e1e-b793-b037af7d7340" /></a>
 </div>
 
 > [!supercallout] For You
@@ -50,5 +50,5 @@
 # ☕ Support
 
 <div align="center">
-<a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="tecito" src="https://github.com/user-attachments/assets/8130e661-06f8-4e1e-b793-b037af7d7340" /></a>
+<a href="https://tecito.app/alonsoup" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="tecito" src="https://github.com/user-attachments/assets/b3864fc3-0e17-43f3-affd-8ab89e18617e" /></a>
 </div>
