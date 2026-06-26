@@ -78,17 +78,17 @@ TABLA DE CONTENIDOS (ÍNDICE)
 }
 
 .theme-dark {
-    --A01: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A02: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A03: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A04: hsl(calc(var(--accent-h) - 15), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A05: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A06: hsl(calc(var(--accent-h) - 25), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A07: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A08: hsl(calc(var(--accent-h) - 35), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A09: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A10: hsl(calc(var(--accent-h) - 45), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
-    --A11: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 53%));
+    --A01: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A02: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A03: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A04: hsl(calc(var(--accent-h) - 15), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A05: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A06: hsl(calc(var(--accent-h) - 25), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A07: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A08: hsl(calc(var(--accent-h) - 35), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A09: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A10: hsl(calc(var(--accent-h) - 45), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
+    --A11: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 53%));
 }
 
 body {
@@ -381,9 +381,9 @@ body {
     --ribbon-background-collapsed: var(--background-secondary);
     --ribbon-width: 44px;
     --ribbon-padding: var(--size-4-2) var(--size-4-1) var(--size-4-3);
-    --scrollbar-active-thumb-bg: hsla(var(--interactive-accent-hsl), 0.2);
+    --scrollbar-active-thumb-bg: var(--background-button-alt);
     --scrollbar-bg: hsla(var(--interactive-accent-hsl), 0.2);
-    --scrollbar-thumb-bg: hsla(var(--interactive-accent-hsl), 0.2);
+    --scrollbar-thumb-bg: var(--background-secondary);
     --search-clear-button-color: var(--text-muted);
     --search-clear-button-size: 13px;
     --search-icon-color: var(--text-muted);
@@ -436,7 +436,7 @@ body {
     --tab-text-color-focused-active-current: var(--text-normal);
     --tab-font-size: var(--font-ui-small);
     --tab-font-weight: inherit;
-    --tab-container-background: var(--background-tertiary) !important;
+    --tab-container-background: var(--background-tertiary);
     --tab-divider-color: var(--background-modifier-border-hover);
     --tab-outline-color: var(--divider-color);
     --tab-outline-width: 1px;
@@ -492,13 +492,13 @@ body {
     --accent-h: 206;
     --accent-s: 80%;
     --accent-l: 65%;
-    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 15%);
+    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 15%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 12%, 12%);
-    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 22%, 9%);
-    --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 20%, 7%);
-    --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 14%, 18%);
-    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 30%, 30%);
-    --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 35%, 24%);    
+    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 9%);
+    --background-secondary-alt: roro;
+    --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 8%, 18%);
+    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 20%, 30%);
+    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 15%, 20%);    
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
@@ -517,7 +517,7 @@ body {
     --text-normal: var(--color-base-100);
     --text-important: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 30%));
     --text-title: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
-    --text-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) + 19%));
+    --text-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) + 20%));
     --text-muted: white;
     --text-faint: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 20%));
     --text-on-accent: white;
@@ -688,9 +688,9 @@ body {
     --ribbon-background: var(--background-tertiary);
     --ribbon-background-collapsed: var(--background-secondary);
     --ribbon-width: 44px;
-    --scrollbar-active-thumb-bg: hsla(var(--interactive-accent-hsl), 0.2);
-    --scrollbar-bg: hsla(var(--interactive-accent-hsl), 0.2);
-    --scrollbar-thumb-bg: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 0%));
+    --scrollbar-active-thumb-bg: var(--background-button-alt);
+    --scrollbar-bg: hsla(var(--interactive-accent-hsl), 1);
+    --scrollbar-thumb-bg: var(--background-secondary);
     --search-clear-button-color: var(--text-muted);
     --search-icon-color: var(--text-muted);
     --search-result-background: var(--color-base-10);
@@ -710,7 +710,7 @@ body {
     --tab-text-color-focused-active: var(--text-muted);
     --tab-text-color-focused-highlighted: var(--text-accent);
     --tab-text-color-focused-active-current: var(--text-normal);
-    --tab-container-background: var(--background-primary);
+    --tab-container-background: var(--background-tertiary);
     --tab-divider-color: var(--background-modifier-border-hover);
     --tab-outline-color: var(--divider-color);
     --tab-outline-width: 1px;
@@ -859,7 +859,7 @@ body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-co
 }
 
 body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-active {
-    background: transparent !important;
+    background: transparent;
 }
 
 [data-type="bookmarks"] .tree-item {
@@ -985,14 +985,13 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-activ
     border: none;
     border-radius: 5px;
     margin-right: 4px;
-    background: var(--background-tertiary);
 }
 
 .workspace-tab-header-container .workspace-tab-header.is-active {
     border: none;
     border-radius: 5px;
     margin-right: 4px;
-    background: var(--background-primary) !important;
+    background: var(--background-primary);
 }
 
 .mod-left-split .workspace-tab-header-container .workspace-tab-header-container-inner, .mod-right-split .workspace-tab-header-container .workspace-tab-header-container-inner {
@@ -1059,7 +1058,7 @@ body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
 }
 
 .workspace-ribbon, body:not(.is-grabbing):not(.is-fullscreen).is-hidden-frameless .mod-top .workspace-tab-header-container, .mod-linux .titlebar-button-container, .mod-windows .titlebar-button-container, .workspace-ribbon .sidebar-toggle-button, .workspace-ribbon.mod-left {
-    background: var(--background-secondary) !important;
+    background: var(--background-secondary);
 }
 
 .clickable-icon {
@@ -1370,7 +1369,7 @@ body:not(.is-phone) .cm-comment, .cm-meta {
     padding-top: 6px;
     padding-bottom: 6px;
     font-size: 1.05rem;
-    filter: brightness(1.2) saturate(0.5) hue-rotate(10deg) !important;
+    filter: brightness(1.2) saturate(0.5) hue-rotate(10deg);
 }
 
 .callout del {
@@ -1872,7 +1871,7 @@ body {
 
 .collage table.dataview>tbody>tr {
     background: var(--background-secondary);
-    border: 2px solid var(--background-tertiary) !important;
+    border: 2px solid var(--background-tertiary);
     display: flex;
     flex-direction: column;
     padding: 0 0 calc(var(--cards-padding)/3) 0;
@@ -2170,13 +2169,13 @@ a.tag {
 
 .markdown-source-view.is-live-preview .cm-line:has(.cm-tag-flashcard),
 .markdown-source-view.is-live-preview .cm-line:has(.cm-tag-card) {
-    text-shadow: 0px 0px 20px var(--color-accent);
-    border-left: 4px solid var(--color-accent);
+    text-shadow: 0px 0px 100px var(--background-button);
+    border-left: 4px solid var(--background-button);
     padding-left: 8px;
     padding-bottom: 3px;
     padding-top: 3px;
     border-radius: 4px;
-    margin-bottom: 14px !important;
+    margin-bottom: 14px !important
 }
 
 .metadata-properties-heading {
@@ -2430,7 +2429,7 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 
 .community-item .flair {
     color: var(--text-muted);
-    background: var(--background-button) !important;
+    background: var(--background-button);
 }
 
 .mod-community-modal .modal-sidebar .setting-item {
@@ -2504,7 +2503,7 @@ input[type='range'] {
 
 .setting-item:not(.mod-toggle):not(.mod-list-item) .setting-item-control input {
     background: var(--background-button-alt);
-    border: none !important;
+    border: none;
 }
 
 textarea:active, .multi-select-container:active, input.metadata-input-text:active, input[type='date']:active, input[type='datetime-local']:active, input[type='text']:active, input[type='search']:active, input[type='email']:active, input[type='password']:active, input[type='number']:active, textarea:focus, .multi-select-container:focus, input.metadata-input-text:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='text']:focus, input[type='search']:focus, input[type='email']:focus, input[type='password']:focus, input[type='number']:focus, textarea:focus-visible, .multi-select-container:focus-visible, input.metadata-input-text:focus-visible, input[type='date']:focus-visible, input[type='datetime-local']:focus-visible, input[type='text']:focus-visible, input[type='search']:focus-visible, input[type='email']:focus-visible, input[type='password']:focus-visible, input[type='number']:focus-visible {
@@ -2516,7 +2515,7 @@ textarea:active, .multi-select-container:active, input.metadata-input-text:activ
 }
 
 button.mod-cta {
-    background: var(--background-button) !important;
+    background: var(--background-button);
     color: var(--text-muted);
 }
 
@@ -2529,7 +2528,7 @@ body.emulate-mobile button {
 }
 
 .input-right-decorator.clickable-icon {
-    background: var(--background-primary-alt) !important;
+    background: var(--background-primary-alt);
     opacity: 1;
 }
 
