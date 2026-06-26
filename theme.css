@@ -2157,14 +2157,12 @@ body {
 .cm-hashtag {
     color: var(--code-comment);
     background: var(--background-highlight);
-    background: var(--background-highlight);
     font-size: var(--tag-size);
     padding: 3px 5px;
 }
 
 a.tag {
     color: var(--code-comment);
-    background: var(--background-highlight);
     background: var(--background-highlight);
     font-size: var(--tag-size);
     padding: 3px 5px;
@@ -2210,7 +2208,6 @@ a.tag {
     border-radius: 8px;
     border: 2px solid var(--text-accent);
     opacity: 0.9;
-    border: 1px solid var(--border-900);
     transition: var(--anim-duration-superfast) var(--anim-motion-smooth);
 }
 
