@@ -1,5 +1,5 @@
 # Universitario: **You pick the color**
-+ A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
+> A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
 <div align="center">
 <a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="linktree" src="https://github.com/user-attachments/assets/a9908336-e7f8-4905-a4a6-94220d8e0d2d" /></a>
