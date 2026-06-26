@@ -1,10 +1,6 @@
 # Universitario: **You pick the color**
 > A theme made for color lovers. **Pick the color you want and the right brightness**, and that's it. </br>
 
-<div align="center">
-<a href="https://linktr.ee/rincontech" target="_blank" rel="noopener noreferrer"><img width="384" height="384" alt="linktree" src="https://github.com/user-attachments/assets/8130e661-06f8-4e1e-b793-b037af7d7340" /></a>
-</div>
-
 > [!supercallout] For You
 >
 >> [!note]+ Try changing the color
@@ -39,6 +35,14 @@
 + Go to appearance
 	+ Pick accent color circle
 	+ Choose your favourite color
+
+<div align="center">
+<img width="384" height="384" alt="linktree" src="https://github.com/user-attachments/assets/8130e661-06f8-4e1e-b793-b037af7d7340" />
+</div>
+
+<div align="center">
+<img width="500" height="auto" alt="linktree" src="https://github.com/user-attachments/assets/66695d42-0bac-427b-af7a-8073e9631814" />
+</div>
 
 # 🪧 Disclaimer
 + This theme has been tested for my personal use. It may not be compatible with certain plugins. </br>
