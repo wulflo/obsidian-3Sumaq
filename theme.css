@@ -951,6 +951,10 @@ body:not(.vibrant-folders) [data-type="bookmarks"] .tree-item:nth-child(11n+12) 
   padding: 3px;
 }
 
+body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-active {
+    background: transparent !important;
+}
+
 [data-type="bookmarks"] .tree-item {
     padding-left: 20px;
 }
@@ -2406,7 +2410,7 @@ input.prompt-input {
 }
 
 .modal-sidebar {
-    background: var(--background-primary);
+    background: var(--background-secondary);
 }
 
 .is-phone .modal.mod-sidebar-layout .modal-content .vertical-tab-header {
@@ -2493,7 +2497,7 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 }
 
 .community-item:hover, .community-item.is-selected:hover {
-    background: var(--background-secondary);
+    background: var(--background-secondary-alt);
 }
 
 .community-item .suggestion-highlight {
