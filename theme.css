@@ -792,10 +792,6 @@ body {
     --color-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 40%), calc(var(--accent-l) + 17%));
 }
 
-.theme-dark.is-mobile {
-    --background-secondary: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 65%), calc(var(--accent-l) - 65%));
-}
-
 /* ==========================================================================
    3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
    ========================================================================== */
