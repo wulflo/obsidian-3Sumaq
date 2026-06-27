@@ -797,8 +797,12 @@ body {
    3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
    ========================================================================== */
 
-   .workspace-drawer-vault-name {
+.workspace-drawer-vault-name {
     color: inherit;
+}
+
+body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
+    background-color: var(--background-tertiary);
 }
 
 .nav-file-title,
