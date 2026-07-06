@@ -786,7 +786,7 @@ body {
     --text-highlight-bg: rgba(var(--text-highlight-bg-rgb), 0.4);
     --text-accent: var(--color-accent);
     --text-accent-hover: var(--color-accent-2);
-    --text-folder: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 35%));
+    --text-folder: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 60%), calc(var(--accent-l) - 45%));
     --interactive-normal: var(--color-base-00);
     --interactive-hover: var(--color-base-10);
     --interactive-accent-hsl: var(--color-accent-hsl);
