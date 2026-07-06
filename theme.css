@@ -455,8 +455,8 @@ body {
     --checkbox-border-color: var(--text-faint);
     --checkbox-border-color-hover: var(--text-muted);
     --accent-h: 206;
-    --accent-s: 80%;
-    --accent-l: 65%;
+    --accent-s: 80% !important;
+    --accent-l: 65% !important;
     --code-background: var(--background-primary-alt);
     --embed-background: inherit;
     --embed-block-shadow-hover: 0 0 0 1px var(--background-modifier-border),
@@ -489,7 +489,7 @@ body {
     --tab-container-background: var(--background-tertiary);
     --titlebar-background: var(--background-secondary);
     --titlebar-background-focused: var(--background-secondary);
-    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 15%);
+    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 8%, 15%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 10%, 17%);
     --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 22%);
     --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 16%, 25%);
