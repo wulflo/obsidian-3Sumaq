@@ -494,8 +494,8 @@ body {
     --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 22%);
     --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 16%, 25%);
     --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 13%);
-    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 40%, 30%);
-    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 25%, 30%);    
+    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 30%, 30%);
+    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 10%, 30%);    
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
