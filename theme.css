@@ -491,7 +491,7 @@ body {
     --titlebar-background-focused: var(--background-secondary);
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 15%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 10%, 17%);
-    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 20%);
+    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 22%);
     --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 16%, 25%);
     --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 13%);
     --background-button: hsl(calc(var(--accent-h) + 0 / 1), 40%, 30%);
