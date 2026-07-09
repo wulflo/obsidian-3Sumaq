@@ -747,12 +747,12 @@ body {
     --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 25%, 96%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 5 / 1), 20%, 92%);
-    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 15%, 83%);
+    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 25%, 85%);
     --background-secondary-alt: hsl(calc(var(--accent-h) + 10 / 1), 15%, 95%);
     --background-tertiary: hsl(calc(var(--accent-h) + 10 / 1), 18%, 90%);
     --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
-    --background-button: hsl(calc(var(--accent-h) + 10 / 1), 45%, 78%);
-    --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 25%, 90%);
+    --background-button: hsl(calc(var(--accent-h) + 20 / 1), 45%, 70%);
+    --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 25%, 80%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: var(--background-tertiary);
