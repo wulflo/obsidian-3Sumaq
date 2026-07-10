@@ -495,7 +495,8 @@ body {
     --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 16%, 25%);
     --background-tertiary: hsl(calc(var(--accent-h) + 0 / 1), 10%, 13%);
     --background-button: hsl(calc(var(--accent-h) + 0 / 1), 30%, 30%);
-    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 10%, 30%);    
+    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 10%, 30%);
+    --background-inverted: hsl(calc(var(--accent-h) + 0 / 1), 30%, 10%);
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
@@ -596,7 +597,7 @@ body {
     --heading-spacing: calc(var(--p-spacing) * 2.5);
     --hr-color: var(--background-modifier-border);
     --hr-thickness: 2px;
-    --icon-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 45%));
+    --icon-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 65%));
     --icon-color-hover: var(--text-muted);
     --icon-color-active: var(--icon-color);
     --icon-color-focused: var(--icon-color);
@@ -747,12 +748,13 @@ body {
     --accent-l: 70%;
     --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 25%, 96%);
     --background-primary-alt: hsl(calc(var(--accent-h) + 5 / 1), 20%, 92%);
-    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 25%, 85%);
-    --background-secondary-alt: hsl(calc(var(--accent-h) + 10 / 1), 15%, 95%);
+    --background-secondary: hsl(calc(var(--accent-h) + 10 / 1), 25%, 80%);
+    --background-secondary-alt: hsl(calc(var(--accent-h) + 10 / 1), 15%, 85%);
     --background-tertiary: hsl(calc(var(--accent-h) + 10 / 1), 18%, 90%);
+    --background-inverted: hsl(calc(var(--accent-h) + 0 / 1), 30%, 60%);
     --background-table: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 20%));
     --background-button: hsl(calc(var(--accent-h) + 20 / 1), 45%, 70%);
-    --background-button-alt: hsl(calc(var(--accent-h) + 10 / 1), 25%, 80%);
+    --background-button-alt: hsl(calc(var(--accent-h) + 50 / 1), 15%, 85%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: var(--background-tertiary);
@@ -769,7 +771,7 @@ body {
     --background-highlight: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 10%), calc(var(--accent-l) + 10%));
     --text-normal: var(--color-base-100);
     --text-important: hsl(calc(var(--accent-h) + 30), calc(var(--accent-s) - 10%), calc(var(--accent-l) - 55%));
-    --text-title: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 40%));
+    --text-title: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 40%), calc(var(--accent-l) - 50%));
     --text-headings: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 45%));
     --text-muted: black;
     --text-faint: hsl(calc(var(--accent-h) + 0), calc(var(--accent-s) - 0%), calc(var(--accent-l) - 50%));
@@ -2258,7 +2260,11 @@ input.prompt-input {
 }
 
 .modal-bg {
-    background: var(--background-table);
+    background: var(--background-inverted);
+}
+
+.theme-dark .modal-bg {
+    background: roro;
 }
 
 .modal-sidebar {
@@ -2326,7 +2332,7 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 }
 
 .community-modal-search-results-wrapper {
-    border-top: 1px solid var(--text-accent);
+    border-top: 1px solid var(--background-button);
 }
 
 .graph-control-section {
