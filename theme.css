@@ -2610,7 +2610,7 @@ g>g>path {
 }
 
 .command-enabled.svelte-nzpfin svg.svg-icon {
-    color: var(--icon-color);
+    color: var(--accent-color);
 }
 
 /* ==========================================================================
