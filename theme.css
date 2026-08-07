@@ -791,7 +791,7 @@ body {
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
-    --color-headings: hsl(calc(var(--accent-h) - 0), 25%, calc(var(--accent-l) + 5%));
+    --color-headings: hsl(calc(var(--accent-h) - 0), 15%, calc(var(--accent-l) + 5%));
 }
 
 /* ==========================================================================
@@ -825,39 +825,21 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     color: var(--text-important);
 }
 
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+2) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A01) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+3) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A02) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+4) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A03) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+5) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A04) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+6) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A05) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+7) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A06) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+8) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A07) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+9) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A08) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+10) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A09) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+11) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A10) 100%); }
-
-body:not(.vibrant-folders) :is(.nav-folder-children > .nav-folder, .nav-files-container > div > .nav-folder, [data-type="bookmarks"] .tree-item):nth-child(11n+12) { background-image: linear-gradient(to right, var(--background-secondary) 0%, var(--A11) 100%); }
-
 .nav-files-container > div > .nav-folder,
 [data-type="bookmarks"] .tree-item {
-  background: inherit;
-  transition: background .2s;
-  border-radius: 3px;
+  background: var(--background-secondary);
+  border-radius: 6px;
   margin-bottom: 4px;
-  padding: 3px;
+  padding-left: 4px;
+  padding-right: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-active {
-    background: transparent;
+    border-radius: 0%;
+    background: var(--color-headings);
+    padding: 4px;
 }
 
 [data-type="bookmarks"] .tree-item {
@@ -1031,7 +1013,7 @@ body .workspace-tab-header .workspace-tab-header-inner-title {
 
 body:not(.is-phone) .workspace-leaf.mod-active .tree-item-self.has-focus {
     box-shadow: none;
-    border: 2px solid var(--icon-color);
+    border: none;
 }
 
 .workspace-tab-container {
