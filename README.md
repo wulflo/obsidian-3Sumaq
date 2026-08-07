@@ -6,10 +6,10 @@
 >> [!note]+ Try changing the color
 >> Colorful headings and callouts that match the color you choose.
 >
->> [!tip]+ Nested Numbers
+>> [!idea]+ Nested Numbers
 >> Structure your ideas with hierarchical numbering like 1.1, 1.2, 1.1.1 and beyond — perfect for complex outlines and ordered thinking.
 >
->> [!info]+ Eye-Friendly Adjustments
+>> [!quote]+ Eye-Friendly Adjustments
 >> All theme colors have been fine-tuned and softened to completely eliminate glare and prevent visual fatigue during long reading sessions.
 
 1. Colorful Highlights
