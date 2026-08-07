@@ -64,34 +64,6 @@ TABLA DE CONTENIDOS (ÍNDICE)
     color: inherit;
 }
 
-.theme-light {
-    --A01: hsl(calc(var(--accent-h) - 0), 30%, 80%);
-    --A02: hsl(calc(var(--accent-h) - 15), 30%, 80%);
-    --A03: hsl(calc(var(--accent-h) - 30), 30%, 80%);
-    --A04: hsl(calc(var(--accent-h) - 45), 30%, 80%);
-    --A05: hsl(calc(var(--accent-h) - 60), 30%, 80%);
-    --A06: hsl(calc(var(--accent-h) - 75), 30%, 80%);
-    --A07: hsl(calc(var(--accent-h) - 90), 30%, 80%);
-    --A08: hsl(calc(var(--accent-h) - 105), 30%, 80%);
-    --A09: hsl(calc(var(--accent-h) - 120), 30%, 80%);
-    --A10: hsl(calc(var(--accent-h) - 135), 30%, 80%);
-    --A11: hsl(calc(var(--accent-h) - 150), 30%, 80%);
-}
-
-.theme-dark {
-    --A01: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A02: hsl(calc(var(--accent-h) - 5), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A03: hsl(calc(var(--accent-h) - 10), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A04: hsl(calc(var(--accent-h) - 15), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A05: hsl(calc(var(--accent-h) - 20), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A06: hsl(calc(var(--accent-h) - 25), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A07: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A08: hsl(calc(var(--accent-h) - 35), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A09: hsl(calc(var(--accent-h) - 40), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A10: hsl(calc(var(--accent-h) - 45), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-    --A11: hsl(calc(var(--accent-h) - 50), calc(var(--accent-s) - 50%), calc(var(--accent-l) - 43%));
-}
-
 body {
     --anim-duration-none: 0;
     --anim-duration-superfast: 70ms;
@@ -830,7 +802,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   background: var(--background-secondary);
   border-radius: 6px;
   margin-bottom: 4px;
-  padding-left: 4px;
+  padding-left: 0px;
   padding-right: 0px;
   padding-top: 2px;
   padding-bottom: 2px;
