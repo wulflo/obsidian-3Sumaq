@@ -461,19 +461,19 @@ body {
     --tab-container-background: var(--background-tertiary);
     --titlebar-background: var(--background-secondary);
     --titlebar-background-focused: var(--background-secondary);
-    --background-primary: hsl(calc(var(--accent-h) + 0 / 1), 8%, 15%);
-    --background-primary-alt: hsl(calc(var(--accent-h) + 0 / 1), 10%, 17%);
-    --background-secondary: hsl(calc(var(--accent-h) + 0 / 1), 16%, 22%);
-    --background-secondary-alt: hsl(calc(var(--accent-h) + 0 / 1), 16%, 25%);
-    --background-tertiary: hsl(calc(var(--accent-h) + 20), 10%, 13%);
-    --background-button: hsl(calc(var(--accent-h) + 0 / 1), 30%, 30%);
-    --background-button-alt: hsl(calc(var(--accent-h) - 10 / 1), 10%, 30%);
+    --background-primary: hsl(calc(var(--accent-h) + 10), 10%, 10%);
+    --background-primary-alt: hsl(calc(var(--accent-h) + 10), 10%, 12%);
+    --background-secondary: hsl(calc(var(--accent-h) + 10), 16%, 18%);
+    --background-secondary-alt: hsl(calc(var(--accent-h) + 10), 16%, 20%);
+    --background-tertiary: hsl(calc(var(--accent-h) - 0), 15%, 10%);
+    --background-button: hsl(calc(var(--accent-h) + 10), 40%, 40%);
+    --background-button-alt: hsl(calc(var(--accent-h) + 10), 20%, 30%);
     --background-inverted: hsl(calc(var(--accent-h) + 0 / 1), 30%, 10%);
     --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: var(--background-secondary);
-    --background-modifier-border: var(--color-base-30);
+    --background-modifier-border: var(--background-secondary);
     --background-modifier-border-hover: var(--color-base-35);
     --background-modifier-border-focus: var(--color-base-40);
     --background-modifier-error-rgb: var(--color-red-rgb);
@@ -489,7 +489,7 @@ body {
     --text-title: hsl(calc(var(--accent-h) - 0), calc(var(--accent-s) - 20%), calc(var(--accent-l) + 30%));
     --text-headings: hsl(calc(var(--accent-h) - 0), 0%, 100%);
     --text-muted: #fefefec5;
-    --text-faint: hsl(calc(var(--accent-h) + 10), calc(var(--accent-s) - 0%), calc(var(--accent-l) + 20%));
+    --text-faint: hsl(calc(var(--accent-h) + 10), 30%, 90%);
     --text-on-accent: white;
     --text-on-accent-inverted: black;
     --text-error: var(--color-red);
@@ -1923,7 +1923,6 @@ input.prompt-input {
 
 .suggestion-container.mod-search-suggestion {
     max-width: unset;
-    color: black;
     background: var(--background-secondary);
     border-color: var(--text-accent);
 }
