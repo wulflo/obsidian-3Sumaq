@@ -684,7 +684,7 @@ body {
     --checkbox-color-hover: var(--interactive-accent-hover);
     --checkbox-border-color: var(--text-faint);
     --checkbox-border-color-hover: var(--text-muted);
-    --accent-h: 0;
+    --accent-h: 247;
     --accent-s: 80% !important;
     --accent-l: 65% !important;
     --code-background: var(--background-primary-alt);
