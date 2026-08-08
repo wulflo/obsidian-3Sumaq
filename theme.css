@@ -395,7 +395,7 @@ body {
     --clickable-icon-radius: var(--radius-s);
     --indentation-guide-width: 2px;
     --indentation-guide-width-active: 2px;
-    --indentation-guide-color: var(--background-button);
+    --indentation-guide-color: var(--background-button-alt);
     --indentation-guide-color-active: var(--text-accent);
     --italic-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 35%));
     --italic-weight: inherit;
@@ -580,7 +580,7 @@ body {
     --interactive-accent-hsl: var(--color-accent-hsl);
     --interactive-accent: var(--color-accent-1);
     --interactive-accent-hover: var(--color-accent-2);
-    --color-headings: hsl(calc(var(--accent-h) + 30), 30%, 75%);
+    --color-headings: hsl(calc(var(--accent-h) + 30), 20%, 75%);
     --color-selected: hsl(calc(var(--accent-h) + 20), 25%, 70%);
 }
 
@@ -609,7 +609,7 @@ body {
     --icon-color-hover: var(--text-muted);
     --icon-color-active: var(--icon-color);
     --icon-color-focused: var(--icon-color);
-    --indentation-guide-color: var(--background-button);
+    --indentation-guide-color: var(--background-button-alt);
     --indentation-guide-color-active: rgba(var(--mono-rgb-100), 1);
     --inline-title-color: var(--h1-color);
     --italic-color: hsl(calc(var(--accent-h) + 30), 30%, 80%);
@@ -1281,20 +1281,19 @@ body:not(.is-phone) .cm-comment, .cm-meta {
 
 .theme-dark .callout {
     filter: 
-        brightness(2) 
-        contrast(3) 
-        saturate(1) 
-        hue-rotate(100deg) 
-        grayscale(60%) 
+        brightness(1.2) 
+        contrast(0.9) 
+        saturate(0.8) 
+        grayscale(0%) 
         opacity(100%) 
         blur(0px) 
 }
 .theme-light .callout {
     filter: 
         brightness(0.7) 
-        contrast(3) 
+        contrast(1) 
         saturate(0.7) 
-        hue-rotate(45deg) 
+        hue-rotate(15deg) 
         grayscale(0%) 
         opacity(100%) 
         blur(0px) 
@@ -1322,6 +1321,14 @@ body {
     --callout-nowrap-min-width: 250px;
     --callout-gap: 1em;
     --callout-margin: 0px;
+}
+
+.callout[data-callout="quote"], .callout[data-callout="cite"] {
+    --callout-color: lightblue;
+}
+
+.theme-light .callout[data-callout="quote"], .theme-light .callout[data-callout="cite"] {
+    --callout-color: blue;
 }
 
 div[data-callout="supercallout"].callout>.callout-title {
@@ -1352,7 +1359,6 @@ div[data-callout="supercallout"].callout .callout:not([data-callout="supercallou
 div[data-callout="supercallout"].callout:not(.is-collapsed) .callout {
     margin-inline: var(--callout-margin);
     margin-block: var(--callout-margin);
-    color: var(--text-muted);
 }
 
 div[data-callout="supercallout"].callout .callout .callout-content {
@@ -2028,6 +2034,14 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 
 .graph-controls .mod-cta {
     border: 2px solid var(--text-accent)
+}
+
+.setting-item-control select.dropdown {
+    background: hsl(calc(var(--accent-h) + 10), 10%, 20%);
+}
+
+.theme-light .setting-item-control select.dropdown {
+    background: hsl(calc(var(--accent-h) + 10), 10%, 85%);
 }
 
 /* ==========================================================================
