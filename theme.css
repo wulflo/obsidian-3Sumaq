@@ -540,7 +540,7 @@ body {
     --background-secondary-alt: hsl(calc(var(--accent-h) + 10), 15%, 80%);
     --background-tertiary: hsl(calc(var(--accent-h) + 20), 40%, 93%);
     --background-inverted: hsl(calc(var(--accent-h) + 0), 30%, 60%);
-    --background-table: red;
+    --background-table: inherit;
     --background-button: hsl(calc(var(--accent-h) + 20), 45%, 70%);
     --background-button-alt: hsl(calc(var(--accent-h) + 20), 25%, 70%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -1406,10 +1406,6 @@ div[data-callout="supercallout"].callout:not(.is-collapsed) {
    6. TABLAS BASE Y DATAVIEW (BASE TABLES & DATAVIEW)
    ========================================================================== */
 
-.markdown-source-view.mod-cm6 .cm-table-widget table {
-    margin-left: 7%
-}
-
 thead {
     background: var(--background-tertiary);
 }
@@ -2037,11 +2033,11 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 }
 
 .setting-item-control select.dropdown {
-    background: hsl(calc(var(--accent-h) + 10), 10%, 20%);
+    background: hsl(calc(var(--accent-h) + 10), 10%, 30%);
 }
 
 .theme-light .setting-item-control select.dropdown {
-    background: hsl(calc(var(--accent-h) + 10), 10%, 85%);
+    background: hsl(calc(var(--accent-h) + 10), 10%, 93%);
 }
 
 /* ==========================================================================
