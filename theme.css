@@ -327,7 +327,7 @@ body {
 }
 
 .theme-light {
-    --bold-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) - 40%));
+    --bold-color: hsl(calc(var(--accent-h) + 20), 40%, 30%);
     --button-radius: var(--input-radius);
     --canvas-background: var(--background-primary);
     --canvas-card-label-color: var(--text-faint);
@@ -517,9 +517,9 @@ body {
     --tag-color-hover: var(--text-accent);
     --tag-decoration: none;
     --tag-decoration-hover: none;
-    --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+    --tag-background: hsla(var(--accent-h), 40%, 80%);
     --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
-    --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15);
+    --tag-border-color: hsla(var(--interactive-accent-hsl), 0.15) !important;
     --tag-border-color-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --titlebar-background: var(--background-secondary);
     --titlebar-background-focused: var(--background-secondary);
@@ -540,7 +540,8 @@ body {
     --background-secondary-alt: hsl(calc(var(--accent-h) + 10), 15%, 80%);
     --background-tertiary: hsl(calc(var(--accent-h) + 20), 40%, 93%);
     --background-inverted: hsl(calc(var(--accent-h) + 0), 30%, 60%);
-    --background-table: inherit;
+    --background-thead: hsl(calc(var(--accent-h) + 0), 30%, 80%);
+    --background-tbody: hsl(calc(var(--accent-h) + 0), 30%, 90%);
     --background-button: hsl(calc(var(--accent-h) + 20), 45%, 70%);
     --background-button-alt: hsl(calc(var(--accent-h) + 20), 25%, 70%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
@@ -586,7 +587,7 @@ body {
 
 .theme-dark {
     --scrollbar-bg: hsla(var(--interactive-accent-hsl), 0.2);
-    --tag-background: hsla(var(--interactive-accent-hsl), 0.1);
+    --tag-background: hsl(calc(var(--accent-h) + 0), 20%, 25%);
     --tag-background-hover: hsla(var(--interactive-accent-hsl), 0.2);
     --checklist-done-color: var(--text-muted);
     --code-function: var(--color-yellow);
@@ -668,7 +669,7 @@ body {
     --titlebar-text-color-focused: var(--text-normal);
     --toggle-thumb-color: white;
     --vault-name-color: var(--text-normal);
-    --bold-color: hsl(calc(var(--accent-h) + 20), calc(var(--accent-s) - 30%), calc(var(--accent-l) + 5%));
+    --bold-color: hsl(calc(var(--accent-h) + 20), 20%, 65%);
     --canvas-background: var(--background-primary);
     --canvas-card-label-color: var(--text-faint);
     --canvas-color-1: var(--color-red-rgb);
@@ -726,7 +727,8 @@ body {
     --background-button: hsl(calc(var(--accent-h) + 10), 40%, 40%);
     --background-button-alt: hsl(calc(var(--accent-h) + 10), 20%, 30%);
     --background-inverted: hsl(calc(var(--accent-h) + 0 / 1), 30%, 10%);
-    --background-table: hsl(calc(var(--accent-h) - 30), calc(var(--accent-s) - 85%), calc(var(--accent-l) - 35%));
+    --background-thead: hsl(calc(var(--accent-h) + 0), 20%, 15%);
+    --background-tbody: hsl(calc(var(--accent-h) + 0), 15%, 11%);
     --background-modifier-hover: rgba(var(--mono-rgb-100), 0.075);
     --background-modifier-active-hover: hsla(var(--interactive-accent-hsl), 0.15);
     --background-search: var(--background-secondary);
@@ -1407,11 +1409,11 @@ div[data-callout="supercallout"].callout:not(.is-collapsed) {
    ========================================================================== */
 
 thead {
-    background: var(--background-tertiary);
+    background: var(--background-thead);
 }
 
 tbody {
-    background: var(--background-secondary);
+    background: var(--background-tbody);
 }
 
 /* ==========================================================================
@@ -1771,18 +1773,32 @@ body {
    8. ETIQUETAS Y METADATOS (TAGS & METADATA)
    ========================================================================== */
 
-.cm-hashtag {
-    color: var(--code-comment);
-    background: var(--background-highlight);
+a.tag {
+    background: var(--tag-background);
     font-size: var(--tag-size);
-    padding: 3px 5px;
+    padding: 3px 6px;
+    border-radius: var(--radius-s);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    color: var(--code-comment);
 }
 
-a.tag {
-    color: var(--code-comment);
-    background: var(--background-highlight);
+.cm-line span.cm-hashtag.cm-hashtag-begin {
+    display: none;
+}
+
+.cm-line span.cm-hashtag.cm-hashtag-end {
+    background: var(--tag-background);
     font-size: var(--tag-size);
-    padding: 3px 5px;
+    padding: 3px 6px;
+    border-radius: var(--radius-s);
+    text-decoration: none;
+    color: var(--code-comment);
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
 .markdown-source-view.is-live-preview .cm-line:has(.cm-tag-flashcard),
@@ -1905,8 +1921,13 @@ input.prompt-input {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 
-.search-input-container input {
-    background: var(--background-primary);
+.document-replace-input[type=text], .document-search .search-input-container input {
+    background: var(--background-secondary);
+    border: none;
+}
+
+.modal-content .search-input-container input {
+    background: var(--background-tertiary);
     border: none;
 }
 
@@ -2270,6 +2291,10 @@ g>g>path {
     word-break: break-word;
 }
 
+.calendar .day.svelte-q3wqg9 {
+    background: var(--background-secondary);
+}
+
 .container#calendar-container .calendar {
     &>thead>tr:first-of-type {
         &>th:nth-child(1) {color: rgb(255, 0, 128);}
@@ -2292,14 +2317,6 @@ g>g>path {
         &>th:nth-child(6) {color: rgb(116, 236, 255);}
         &>th:nth-child(7) {color: rgb(255, 174, 255);}
     };
-}
-
-.calendar thead {
-    background: var(--background-secondary);
-}
-
-.calendar tbody {
-    background: var(--background-primary);
 }
 
 .command-enabled.svelte-nzpfin svg.svg-icon {
