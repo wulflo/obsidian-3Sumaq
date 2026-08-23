@@ -797,8 +797,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
     color: var(--text-important);
 }
 
-.nav-files-container > div > .nav-folder,
-[data-type="bookmarks"] .tree-item {
+.nav-files-container > div > .nav-folder {
   background: var(--background-secondary);
   border-radius: 5px;
   margin-bottom: 4px;
@@ -811,6 +810,10 @@ body:not(.is-grabbing) .tree-item-self.is-active:hover, .tree-item-self.is-activ
     border-radius: 0%;
     background: var(--color-selected);
     padding: 4px;
+}
+
+[data-type="bookmarks"] .tree-item-self.is-active {
+    border-radius: 4px;
 }
 
 [data-type="bookmarks"] .tree-item {
