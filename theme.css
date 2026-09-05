@@ -1161,7 +1161,6 @@ hr {
     font-style: italic;
     padding: 2px 12px 2px 12px;
     position: relative;
-    box-shadow: var(--cbs);
     background: var(--background-quote);
 }
 
@@ -1175,7 +1174,6 @@ hr {
     left: 5px;
     top: 15px;
     width: 5px;
-    background: re;
     border-radius: 0px;
 }
 
@@ -1211,7 +1209,6 @@ body:not(.is-phone) .cm-comment, .cm-meta {
 }
 
 .callout del {
-    color: var(--strikethrough-color);
 }
 
 .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false] {
@@ -1917,7 +1914,6 @@ input.prompt-input {
 }
 
 .theme-dark .modal-bg {
-    background: roro;
 }
 
 .modal-sidebar {
