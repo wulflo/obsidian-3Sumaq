@@ -31,32 +31,32 @@
  Everyone is permitted to copy and distribute verbatim copies
  of this license document, but changing it is not allowed.
 
-TABLA DE CONTENIDOS (ÍNDICE)
+TABLE OF CONTENTS (INDEX)
 
-   1. FUENTE GLOBAL
-   2. VARIABLES GLOBALES Y TEMAS (ROOT, BODY, THEMES)
-   3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
-   4. TIPOGRAFÍA Y FORMATO MARKDOWN (TYPOGRAPHY & MARKDOWN FORMATTING)
-   5. CALLOUTS Y BLOQUES MULTICOLUMNA (CALLOUTS & supercallout BLOCKS)
-   6. TABLAS BASE Y DATAVIEW (BASE TABLES & DATAVIEW)
-   7. VISTA DE TARJETAS (DATAVIEW CARDS)
-   8. ETIQUETAS Y METADATOS (TAGS & METADATA)
-   9. IMÁGENES, EMBEBIDOS Y TOOLTIPS (IMAGES, EMBEDS & TOOLTIPS)
-   10. BÚSQUEDA Y SUGERENCIAS (SEARCH & SUGGESTIONS)
-   11. AJUSTES, MODALES Y COMUNIDAD (SETTINGS, MODALS & COMMUNITY)
-   12. ENTRADAS, BOTONES Y FORMULARIOS (INPUTS, BUTTONS & FORMS)
-   13. PLUGINS Y GRÁFICOS (PLUGINS & GRAPHS)
-   14. MISCELÁNEOS Y CLASES DE APOYO (MISC & HELPERS)
-   15. VERSIÓN MÓVIL (MOBILE & PHONE)
+   1. GLOBAL FONT
+   2. GLOBAL VARIABLES AND THEMES (ROOT, BODY, THEMES)
+   3. USER INTERFACE AND WORKSPACE (WORKSPACE UI & NAVIGATION)
+   4. TYPOGRAPHY AND MARKDOWN FORMATTING (TYPOGRAPHY & MARKDOWN FORMATTING)
+   5. CALLOUTS AND MULTICOLUMN BLOCKS (CALLOUTS & supercallout BLOCKS)
+   6. BASE TABLES AND DATAVIEW (BASE TABLES & DATAVIEW)
+   7. CARD VIEW (DATAVIEW CARDS)
+   8. TAGS AND METADATA (TAGS & METADATA)
+   9. IMAGES, EMBEDS AND TOOLTIPS (IMAGES, EMBEDS & TOOLTIPS)
+   10. SEARCH AND SUGGESTIONS (SEARCH & SUGGESTIONS)
+   11. SETTINGS, MODALS AND COMMUNITY (SETTINGS, MODALS & COMMUNITY)
+   12. INPUTS, BUTTONS AND FORMS (INPUTS, BUTTONS & FORMS)
+   13. PLUGINS AND GRAPHS (PLUGINS & GRAPHS)
+   14. MISCELLANEOUS AND HELPER CLASSES (MISC & HELPERS)
+   15. MOBILE & PHONE VERSION (MOBILE & PHONE)
 
 ---------------------------------------------------------------------------*/
 
 /* ==========================================================================
-   1. FUENTE GLOBAL: A ELECCIÓN
+   1. GLOBAL FONT: OF CHOICE
    ========================================================================== */
 
 /* ==========================================================================
-   2. VARIABLES GLOBALES Y TEMAS (ROOT, BODY, THEMES)
+   2. GLOBAL VARIABLES AND THEMES (ROOT, BODY, THEMES)
    ========================================================================== */
 
 :root {
@@ -475,7 +475,6 @@ body {
     --prompt-border-color: var(--color-base-40, var(--background-modifier-border-focus));
     --ribbon-background: var(--background-tertiary);
     --ribbon-background-collapsed: var(--background-secondary);
-    --ribbon-width: 44px;
     --scrollbar-active-thumb-bg: var(--background-button-alt);
     --scrollbar-bg: hsla(var(--interactive-accent-hsl), 1);
     --scrollbar-thumb-bg: var(--background-secondary);
@@ -505,12 +504,8 @@ body {
     --tab-curve: 6px;
     --tab-radius: var(--radius-s);
     --tab-radius-active: 6px 6px 0 0;
-    --tab-width: 200px;
     --tab-max-width: 320px;
     --tab-stacked-pane-width: 700px;
-    --tab-stacked-header-width: var(--header-height);
-    --tab-stacked-text-align: left;
-    --tab-stacked-text-transform: rotate(0deg);
     --tab-stacked-text-writing-mode: vertical-lr;
     --tab-stacked-shadow: -8px 0 8px 0 rgba(0, 0, 0, 0.05);
     --tag-color: var(--text-accent);
@@ -772,7 +767,7 @@ body {
 }
 
 /* ==========================================================================
-   3. INTERFAZ DE USUARIO Y ESPACIO DE TRABAJO (WORKSPACE UI & NAVIGATION)
+   3. USER INTERFACE AND WORKSPACE (WORKSPACE UI & NAVIGATION)
    ========================================================================== */
 
 .workspace-drawer-vault-name {
@@ -979,7 +974,7 @@ body:not(.is-phone) .vertical-tab-nav-item.is-active {
 }
 
 /* ==========================================================================
-   4. TIPOGRAFÍA Y FORMATO MARKDOWN (TYPOGRAPHY & MARKDOWN FORMATTING)
+   4. TYPOGRAPHY AND MARKDOWN FORMATTING (TYPOGRAPHY & MARKDOWN FORMATTING)
    ========================================================================== */
 
 body {
@@ -989,7 +984,6 @@ body {
     --h3-size: 1.7em;
     --h4-size: 1.5em;
     --h5-size: 1.3em;
-    --h6-size: 1.1em;
     --h1-weight: bold;
     --h2-weight: bold;
     --h3-weight: 600;
@@ -1008,7 +1002,6 @@ body {
     --h4-line-height: 2;
     --h5-line-height: var(--line-height-normal);
     --h6-line-height: var(--line-height-normal);
-    --h6-size: 1em;
     --h1-style: normal;
     --h2-style: normal;
     --h3-style: normal;
@@ -1183,7 +1176,7 @@ body:not(.is-phone) .cm-comment, .cm-meta {
 }
 
 /* ==========================================================================
-   5. CALLOUTS Y BLOQUES MULTICOLUMNA (CALLOUTS & supercallout BLOCKS)
+   5. CALLOUTS AND MULTICOLUMN BLOCKS (CALLOUTS & supercallout BLOCKS)
    ========================================================================== */
 
 .theme-dark,
@@ -1206,9 +1199,6 @@ body:not(.is-phone) .cm-comment, .cm-meta {
     padding-bottom: 6px;
     font-size: 1rem;
     filter: brightness(1.2) saturate(0.5) hue-rotate(10deg);
-}
-
-.callout del {
 }
 
 .markdown-source-view.mod-cm6 .cm-content>[contenteditable=false] {
@@ -1354,7 +1344,7 @@ div[data-callout="supercallout"].callout:not(.is-collapsed) {
 }
 
 /* ==========================================================================
-   6. TABLAS BASE Y DATAVIEW (BASE TABLES & DATAVIEW)
+   6. BASE TABLES AND DATAVIEW (BASE TABLES & DATAVIEW)
    ========================================================================== */
 
 thead {
@@ -1366,7 +1356,7 @@ tbody {
 }
 
 /* ==========================================================================
-   7. VISTA DE TARJETAS (DATAVIEW CARDS)
+   7. CARD VIEW (DATAVIEW CARDS)
    ========================================================================== */
 
 body {
@@ -1719,7 +1709,7 @@ body {
 }
 
 /* ==========================================================================
-   8. ETIQUETAS Y METADATOS (TAGS & METADATA)
+   8. TAGS AND METADATA (TAGS & METADATA)
    ========================================================================== */
 
 a.tag {
@@ -1776,7 +1766,7 @@ a.tag {
 }
 
 /* ==========================================================================
-   9. IMÁGENES, EMBEBIDOS Y TOOLTIPS (IMAGES, EMBEDS & TOOLTIPS)
+   9. IMAGES, EMBEDS AND TOOLTIPS (IMAGES, EMBEDS & TOOLTIPS)
    ========================================================================== */
 
 .markdown-source-view.mod-cm6 .cm-embed-block {
@@ -1845,7 +1835,7 @@ body {
 }
 
 /* ==========================================================================
-   10. BUSQUEDA Y SUGERENCIAS (SEARCH & SUGGESTIONS)
+   10. SEARCH AND SUGGESTIONS (SEARCH & SUGGESTIONS)
    ========================================================================== */
 
 .search-result-file-matched-text {
@@ -1901,7 +1891,7 @@ input.prompt-input {
 }
 
 /* ==========================================================================
-   11. AJUSTES, MODALES Y COMUNIDAD (SETTINGS, MODALS & COMMUNITY)
+   11. SETTINGS, MODALS AND COMMUNITY (SETTINGS, MODALS & COMMUNITY)
    ========================================================================== */
 
 .modal {
@@ -1911,9 +1901,6 @@ input.prompt-input {
 
 .modal-bg {
     background: var(--background-inverted);
-}
-
-.theme-dark .modal-bg {
 }
 
 .modal-sidebar {
@@ -2010,7 +1997,7 @@ body:not(.is-phone) .community-item.is-selected, body:not(.is-phone) .community-
 }
 
 /* ==========================================================================
-   12. ENTRADAS, BOTONES Y FORMULARIOS (INPUTS, BUTTONS & FORMS)
+   12. INPUTS, BUTTONS AND FORMS (INPUTS, BUTTONS & FORMS)
    ========================================================================== */
 
 .checkbox-container {
@@ -2078,7 +2065,7 @@ button.mod-cta {
 }
 
 /* ==========================================================================
-   13. PLUGINS Y GRÁFICOS (PLUGINS & GRAPHS)
+   13. PLUGINS AND GRAPHS (PLUGINS & GRAPHS)
    ========================================================================== */
 
 .canvas-path-label {
@@ -2276,7 +2263,7 @@ g>g>path {
 }
 
 /* ==========================================================================
-   14. MISCELÁNEOS Y CLASES DE APOYO (MISC & HELPERS)
+   14. MISCELLANEOUS AND HELPER CLASSES (MISC & HELPERS)
    ========================================================================== */
 
 .empty-state-action {
@@ -2314,7 +2301,7 @@ g>g>path {
 }
 
 /* ==========================================================================
-   15. VERSIÓN MÓVIL (MOBILE & PHONE)
+   15. MOBILE & PHONE VERSION
    ========================================================================== */
 
 input[type="color"] {
