@@ -1,0 +1,67 @@
+name: Validate
+
+on:
+  pull_request:
+    paths:
+      - theme.css
+      - manifest.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  css:
+    name: Validate CSS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate theme.css
+        run: npx --yes csstree-validator@4.0.1 theme.css
+
+  manifest:
+    name: Validate manifest
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Validate manifest.json
+        run: |
+          set -euo pipefail
+
+          if ! jq empty manifest.json 2>/dev/null; then
+            echo "::error file=manifest.json::manifest.json is not valid JSON"
+            exit 1
+          fi
+
+          for key in name version minAppVersion author; do
+            value=$(jq -r --arg key "$key" '.[$key] // empty' manifest.json)
+
+            if [ -z "$value" ]; then
+              echo "::error file=manifest.json::Missing required field: $key"
+              exit 1
+            fi
+          done
+
+          version=$(jq -r '.version' manifest.json)
+
+          if ! printf '%s' "$version" | grep -Eq '^[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error file=manifest.json::Version '$version' is not valid SemVer (expected MAJOR.MINOR.PATCH)"
+            exit 1
+          fi
+
+          echo "manifest.json is valid (version $version)"
